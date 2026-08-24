@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CS Ops Weekly Reports</title>
+<style>
+  :root {
+    --ink: #1c2128;
+    --ink-soft: #545b64;
+    --line: #dfe3e8;
+    --bg: #f6f7f8;
+    --panel: #ffffff;
+    --accent: #2f5d50;      /* deep pine — reads "ops/compliance", not default terracotta/black */
+    --accent-soft: #e7efec;
+    --red: #b3432b;
+    --amber: #b8862e;
+    --green: #2f7a4f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 18px 28px 0 28px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+  }
+  header h1 {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    margin: 0 0 14px 0;
+  }
+  header .meta {
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin: 0 0 14px 0;
+  }
+  nav {
+    display: flex;
+    gap: 4px;
+    padding: 0 24px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+  }
+  .tab {
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.15s ease;
+  }
+  .tab:hover { color: var(--ink); }
+  .tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--ink-soft);
+    flex-shrink: 0;
+  }
+  .tab[data-status="ready"] .dot { background: var(--green); }
+  .tab[data-status="pending"] .dot { background: var(--amber); }
+
+  main { flex: 1; position: relative; }
+  .frame-wrap {
+    position: absolute; inset: 0;
+    display: none;
+  }
+  .frame-wrap.active { display: block; }
+  iframe {
+    width: 100%; height: 100%; border: none; background: var(--panel);
+  }
+  .empty {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--ink-soft);
+    text-align: center;
+    padding: 40px;
+  }
+  .empty strong { color: var(--ink); font-size: 15px; }
+  .empty code {
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 12.5px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>CS Ops Weekly Reports</h1>
+  <div class="meta">Updated by Umang · replace the file for a tab, refresh the page — layout stays put</div>
+</header>
+
+<nav id="tabbar"></nav>
+
+<main id="frames"></main>
+
+<script>
+  // Edit this list when a report moves, gets renamed, or a new one (e.g. TTO→TTV) goes live.
+  // src: local relative path OR a full https:// URL to an already-hosted report.
+  // status: "ready" (file/URL exists) or "pending" (placeholder, not built yet).
+  const REPORTS = [
+    { id: "prod",    label: "Prod Implementation",  src: "reports/prod-implementation.html", status: "ready" },
+    { id: "keka",    label: "Keka Compliance",       src: "reports/keka-compliance.html",     status: "ready" },
+    { id: "hubspot", label: "HubSpot Compliance",    src: "reports/hubspot-compliance.html",  status: "ready" },
+    { id: "ttoTTV",  label: "TTO → TTV",             src: "reports/tto-ttv.html",              status: "pending" },
+  ];
+
+  const tabbar = document.getElementById("tabbar");
+  const frames = document.getElementById("frames");
+
+  REPORTS.forEach((r, i) => {
+    const tab = document.createElement("button");
+    tab.className = "tab" + (i === 0 ? " active" : "");
+    tab.dataset.status = r.status;
+    tab.dataset.target = r.id;
+    tab.innerHTML = `<span class="dot"></span>${r.label}`;
+    tab.onclick = () => activate(r.id);
+    tabbar.appendChild(tab);
+
+    const wrap = document.createElement("div");
+    wrap.className = "frame-wrap" + (i === 0 ? " active" : "");
+    wrap.id = "frame-" + r.id;
+
+    if (r.status === "pending") {
+      wrap.innerHTML = `<div class="empty">
+        <strong>${r.label} isn't live yet</strong>
+        <div>Set <code>status: "ready"</code> and point <code>src</code> at the file once it exists.</div>
+      </div>`;
+    } else {
+      const iframe = document.createElement("iframe");
+      iframe.src = r.src;
+      iframe.title = r.label;
+      iframe.onerror = () => {
+        wrap.innerHTML = `<div class="empty"><strong>Couldn't load ${r.label}</strong><div>Check that <code>${r.src}</code> exists.</div></div>`;
+      };
+      wrap.appendChild(iframe);
+    }
+    frames.appendChild(wrap);
+  });
+
+  function activate(id) {
+    document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.target === id));
+    document.querySelectorAll(".frame-wrap").forEach(f => f.classList.toggle("active", f.id === "frame-" + id));
+  }
+</script>
+
+</body>
+</html>
