@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Weekly Implementation Review · Skan AI · 21 Aug 2026</title>
+<title>Weekly Implementation Review · Skan AI · 28 Aug 2026</title>
 <style>
 :root{--bg:#f5f7fb;--card:#fff;--ink:#14213d;--muted:#6b7280;--line:#e5e7eb;--navy:#101828;--teal:#0891b2;--teal-bright:#06b6d4;--green:#059669;--green-soft:#d1fae5;--yellow:#d97706;--yellow-soft:#fef3c7;--red:#be123c;--red-soft:#ffe4e6;--violet:#6d28d9;--sky:#0369a1;--sky-soft:#e0f2fe;--amber:#b45309}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -139,21 +139,22 @@ table.gg.sky-h thead th{background:var(--sky-soft);color:var(--sky)}
 <body>
 
 
+
 <div class="header">
   <div>
     <div class="title">Weekly Implementation Review</div>
-    <div class="meta">CS Ops · Week ending 21st Aug 2026 · Sent Monday 24th Aug IST</div>
+    <div class="meta">CS Ops · Week ending 28th Aug 2026 · Sent Monday 31st Aug IST</div>
   </div>
   <div class="brand">SKAN<sup>AI</sup></div>
 </div>
 
 <div class="kpi-strip">
-  <div class="kpi"><div class="lbl">Active Accounts</div><div class="val v-green">35</div><div class="sub">↑ from 32 last week</div></div>
-  <div class="kpi"><div class="lbl">Red</div><div class="val v-red">8</div><div class="sub">↑ from 6 last week</div></div>
-  <div class="kpi"><div class="lbl">Yellow</div><div class="val v-yellow">9</div><div class="sub">↓ from 11 last week</div></div>
-  <div class="kpi"><div class="lbl">Green</div><div class="val v-green">13</div><div class="sub">= from 13 last week</div></div>
-  <div class="kpi"><div class="lbl">Missed</div><div class="val v-grey">5</div><div class="sub">↑ from 2 last week</div></div>
-  <div class="kpi"><div class="lbl">Reporting Rate</div><div class="val v-yellow">86%</div><div class="sub">↓ from 94% — 30 of 35 reported</div></div>
+  <div class="kpi"><div class="lbl">Active Accounts</div><div class="val v-green">35</div><div class="sub">= from 35 last week</div></div>
+  <div class="kpi"><div class="lbl">Red</div><div class="val v-red">6</div><div class="sub">↓ from 8 last week</div></div>
+  <div class="kpi"><div class="lbl">Yellow</div><div class="val v-yellow">12</div><div class="sub">↑ from 9 last week</div></div>
+  <div class="kpi"><div class="lbl">Green</div><div class="val v-green">12</div><div class="sub">↓ from 13 last week</div></div>
+  <div class="kpi"><div class="lbl">Missed</div><div class="val v-grey">5</div><div class="sub">= from 5 last week</div></div>
+  <div class="kpi"><div class="lbl">Reporting Rate</div><div class="val v-yellow">86%</div><div class="sub">= from 86% — 30 of 35 reported</div></div>
 </div>
 
 
@@ -161,33 +162,34 @@ table.gg.sky-h thead th{background:var(--sky-soft);color:var(--sky)}
 
   <div class="btmline">
     <div class="btmline-h">Highlights</div>
-    <div class="btmline-t">Reporting fell to <b>86%</b> and the book worsened at both ends. Red is at <b>8</b>, its highest level since March, and Green holds at 13 only because four accounts filed for the first time.</div>
+    <div class="btmline-t">Red eased from 8 to <b>6</b>, but Yellow is at <b>12</b> — the highest in the 25-week series. Reporting held flat at 86%.</div>
     <ul class="btmline-l">
-      <li><b>Three accounts entered Red this week and none were flagged last week</b> — Lincoln Financials and Brillio from Yellow, American Express two steps down from Green.</li>
-      <li><b>Equitable and Dell Technologies are now in a fourth consecutive Red week.</b> Dell has renewal-deciding meetings inside three weeks with the agentic build still unresolved.</li>
+      <li><b>Four came down from Red</b> — Sun Life Financial, Lincoln Financials, Brillio, American Express. None closed out; all carry a dated September plan.</li>
+      <li><b>Two escalated, both on external dependencies.</b> Wipro's 23–24-step infra approval chain pushed the gateway to mid-September, gating the ~200-licence platform deal. Unum lost its accuracy cross-check to a data anomaly with Wave 1 due 7 Sep.</li>
+      <li><b>The long-Red core has not moved.</b> Equitable and Dell Technologies at five weeks, Wells Fargo four, The Hartford three with a live termination notice and no plan on file.</li>
     </ul>
   </div>
 
   <div class="sig5">
     <div class="sig r">
-      <div class="sig-n r">3</div>
+      <div class="sig-n r">4</div>
       <div class="sig-l">Red &gt; 2 weeks</div>
-      <div class="sig-acc">Equitable · Dell Technologies · Wells Fargo</div>
+      <div class="sig-acc">Equitable · Dell Technologies · Wells Fargo · The Hartford</div>
     </div>
     <div class="sig r">
       <div class="sig-n r">2</div>
       <div class="sig-l">Moved Yellow → Red</div>
-      <div class="sig-acc">Lincoln Financials · Brillio</div>
+      <div class="sig-acc">Wipro · Unum</div>
     </div>
     <div class="sig y">
       <div class="sig-n y">4</div>
       <div class="sig-l">Yellow &gt; 2 weeks</div>
-      <div class="sig-acc">MetLife · Wipro · Infoniqa · Pathstone</div>
+      <div class="sig-acc">MetLife · Infoniqa · Pathstone · Securian Financial</div>
     </div>
     <div class="sig a">
       <div class="sig-n a">2</div>
       <div class="sig-l">No Go-to-Green plan</div>
-      <div class="sig-acc">The Hartford · American Express</div>
+      <div class="sig-acc">The Hartford · UHG - Optum</div>
     </div>
 </div>
 
@@ -196,203 +198,195 @@ table.gg.sky-h thead th{background:var(--sky-soft);color:var(--sky)}
       <thead><tr><th>Decision needed this week</th><th>Owner</th><th>By</th></tr></thead>
       <tbody>
         <tr>
-          <td><div class="q">The Hartford — accept unpaid H2 services, or begin offboarding?</div><div class="ctx">Carried over unresolved from last week and now at the target date. Procurement declined the free run-on to Jan 2027; Megan remains open to continuous observation on free services only. Still no go-to-green plan and no PM on the account.</div></td>
-          <td><div class="own-list"><span class="own-n">Sarah Sachse-Pasqua</span><span class="own-r">PL</span></div></td>
-          <td><div class="tgt r">24 Aug</div></td>
+          <td><div class="q">The Hartford — begin offboarding, or accept continuous observation on free services through 2026?</div><div class="ctx">Third Red week and a second week past the original decision date. Procurement declined the no-cost run-on to Jan 2027; Megan (AVP, Ops) may want continuous observation to end-2026. Follow-ups are parked until Boris and Sarah return from PTO on 2 Sep. Still no go-to-green plan on file.</div></td>
+          <td><div class="own-list"><span class="own-n">Shira Hirsh</span><span class="own-r">CVM</span> <span class="own-sep">·</span> <span class="own-n">Sarah Sachse-Pasqua</span><span class="own-r">PL</span></div></td>
+          <td><div class="tgt r">2 Sep</div></td>
         </tr>
         <tr>
-          <td><div class="q">Lincoln Financials — approve the compute upgrade CR?</div><div class="ctx">A masking/OCR pileup has blocked all new data for roughly 19 days. Root cause was fixed on 18 Aug, but clearing the backlog needs the upgrade. Impact model goes to RG and Binod on 24 Aug.</div></td>
-          <td><div class="own-list"><span class="own-n">Kaustubh Bharadwaj</span><span class="own-r">PM</span> <span class="own-sep">·</span> <span class="own-n">Sarah Sachse-Pasqua</span><span class="own-r">PL</span></div></td>
-          <td><div class="tgt r">25 Aug</div></td>
+          <td><div class="q">Wipro — escalate to the CIO, or formally re-baseline the pilot to mid-September?</div><div class="ctx">The infra approval chain runs 23–24 steps and the 28 Aug gateway target is gone. Nothing downstream can start. This pilot is the proof point for the ~200-licence, ~$3M platform deal, and Wipro has not yet confirmed the mid-September date.</div></td>
+          <td><div class="own-list"><span class="own-n">Richa Koul</span><span class="own-r">PM</span> <span class="own-sep">·</span> <span class="own-n">Ankur Tandon</span><span class="own-r">PL</span></div></td>
+          <td><div class="tgt r">5 Sep</div></td>
         </tr>
         <tr>
-          <td><div class="q">American Express — who owns the MRMG/InfoSec unblock, and is the account Red or Green?</div><div class="ctx">Project is paused on InfoSec delays tied to MRMG approval and the original Global Servicing use case has slipped. Filed Red with no reason tag, no go-to-green plan, and a summary that still reads "Customer Sentiment = GREEN".</div></td>
-          <td><div class="own-list"><span class="own-n">Stefnie Howley</span><span class="own-r">PM</span> <span class="own-sep">·</span> <span class="own-n">Isaac Sierra</span><span class="own-r">PL</span></div></td>
-          <td><div class="tgt y">28 Aug</div></td>
+          <td><div class="q">Unum — commit recovery resource to Track A, or move Wave 1 off 7 Sep?</div><div class="ctx">A file change created a data anomaly and report accuracy can no longer be cross-checked, putting Track B internally Red. The team is working the weekend to hold the date. Nikita's resignation removes the Caroline relationship owner mid-flight and Sahil is still access-blocked.</div></td>
+          <td><div class="own-list"><span class="own-n">Stefnie Howley</span><span class="own-r">PM</span> <span class="own-sep">·</span> <span class="own-n">Marcin Citak</span><span class="own-r">PL</span></div></td>
+          <td><div class="tgt r">4 Sep</div></td>
         </tr>
         <tr>
-          <td><div class="q">Dell Technologies — escalate the renewal risk, or re-scope the agentic commitment?</div><div class="ctx">Fourth Red week. Meetings that decide the renewal fall in the next two to three weeks while the agentic build is still pending and the integrated storyline is unfinished.</div></td>
+          <td><div class="q">Dell Technologies — escalate the renewal risk, or re-scope the agentic commitment?</div><div class="ctx">Fifth Red week. The meetings that decide the renewal land in the first week of September with the agentic build still pending and the integrated storyline unfinished. Dell is also changing its tech stack, which may force a repeat Blueprint observation.</div></td>
           <td><div class="own-list"><span class="own-n">Nitin Goyal</span><span class="own-r">PM</span> <span class="own-sep">·</span> <span class="own-n">Preeti</span><span class="own-r">PL</span></div></td>
-          <td><div class="tgt y">4 Sep</div></td>
+          <td><div class="tgt r">4 Sep</div></td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <div class="panel">
-    <div class="ph violet"><span>⚑ Movement Watchlist</span><span class="cnt">21 FLAGGED · R → Y → G</span></div>
+    <div class="ph violet"><span>⚑ Movement Watchlist</span><span class="cnt">20 FLAGGED · R → Y → G</span></div>
     <div class="wl3">
-      <div><div class="wl-sec">🔴 Red — 8</div>
+      <div><div class="wl-sec">🔴 Red — 6</div>
       <div class="wl-r">
         <div class="wl-rail r"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Equitable</span><span class="wl-mv" style="color:var(--red)">4w 🔴</span></div>
-          <div class="wl-bd"><span class="b red">4w red</span><span class="b red">paused Sep–Dec</span><span class="b amb">stale summary</span></div>
-          <div class="wl-n">Account handed to a new Skan owner; plan is a handover</div>
-        </div>
-      </div>
-      <div class="wl-r">
-        <div class="wl-rail r"></div>
-        <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Dell Technologies</span><span class="wl-mv" style="color:var(--red)">4w 🔴</span></div>
-          <div class="wl-bd"><span class="b red">4w red</span><span class="b red">renewal at risk</span><span class="b amb">agentic slipping</span></div>
-          <div class="wl-n">Renewal-deciding meetings inside three weeks</div>
+          <div class="wl-hd"><span class="wl-a">Equitable</span><span class="wl-mv" style="color:var(--red)">5w 🔴</span></div>
+          <div class="wl-bd"><span class="b red">5w red</span><span class="b red">paused Sep–Dec</span><span class="b amb">PS ends 31 Aug</span></div>
+          <div class="wl-n">Handover to Rexy Joseph (Corebridge) late Sep / early Oct</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail r"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Wells Fargo</span><span class="wl-mv" style="color:var(--red)">3w 🔴</span></div>
-          <div class="wl-bd"><span class="b red">3w red</span><span class="b grn">5.6.30 + 5.9 shipped</span><span class="b red">scope still pulled</span></div>
-          <div class="wl-n">Releases landed on time; scope not yet restored</div>
+          <div class="wl-hd"><span class="wl-a">Dell Technologies</span><span class="wl-mv" style="color:var(--red)">5w 🔴</span></div>
+          <div class="wl-bd"><span class="b red">5w red</span><span class="b red">renewal at risk</span><span class="b amb">tech stack changing</span></div>
+          <div class="wl-n">Renewal-deciding meetings in the first week of September</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail r"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Sun Life Financial</span><span class="wl-mv" style="color:var(--red)">2w 🔴</span></div>
-          <div class="wl-bd"><span class="b red">2w red</span><span class="b red">same blocker</span><span class="b amb">walkthrough slipped</span></div>
-          <div class="wl-n">Browser extension unresolved a second week running</div>
+          <div class="wl-hd"><span class="wl-a">Wells Fargo</span><span class="wl-mv" style="color:var(--red)">4w 🔴</span></div>
+          <div class="wl-bd"><span class="b red">4w red</span><span class="b grn">5.9 live pre-prod</span><span class="b red">scope still pulled</span></div>
+          <div class="wl-n">Platform stability is the stated reason process analysis stays withdrawn</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail r"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">The Hartford</span><span class="wl-mv" style="color:var(--red)">2w 🔴</span></div>
-          <div class="wl-bd"><span class="b red">2w red</span><span class="b amb">no plan</span><span class="b amb">no PM</span><span class="b red">churn notice</span></div>
-          <div class="wl-n">Decision date reached with nothing on file</div>
+          <div class="wl-hd"><span class="wl-a">The Hartford</span><span class="wl-mv" style="color:var(--red)">3w 🔴</span></div>
+          <div class="wl-bd"><span class="b red">3w red</span><span class="b amb">no plan</span><span class="b red">churn notice</span><span class="b gry">CVM-led</span></div>
+          <div class="wl-n">Sales/offboarding only; follow-ups parked until Boris and Sarah return 2 Sep</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail r"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Lincoln Financials</span><span class="wl-mv" style="color:var(--red)">🟡 → 🔴</span></div>
-          <div class="wl-bd"><span class="b red">escalated</span><span class="b red">19d data blocked</span><span class="b red">+ product ch.</span></div>
-          <div class="wl-n">OCR pileup stopped all new data; CR pending</div>
+          <div class="wl-hd"><span class="wl-a">Wipro</span><span class="wl-mv" style="color:var(--red)">🟡 → 🔴</span></div>
+          <div class="wl-bd"><span class="b red">escalated</span><span class="b red">28 Aug → mid-Sep</span><span class="b red">$3M deal gated</span></div>
+          <div class="wl-n">23–24-step infra approval chain; CIO escalation opening</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail r"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Brillio</span><span class="wl-mv" style="color:var(--red)">🟡 → 🔴</span></div>
-          <div class="wl-bd"><span class="b red">escalated</span><span class="b amb">awaiting client</span><span class="b grn">collection on time</span></div>
-          <div class="wl-n">Delivery held; Brillio decision backlog is the blocker</div>
-        </div>
-      </div>
-      <div class="wl-r">
-        <div class="wl-rail r"></div>
-        <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">American Express</span><span class="wl-mv" style="color:var(--red)">🟢 → 🔴</span></div>
-          <div class="wl-bd"><span class="b red">two-step drop</span><span class="b amb">no plan</span><span class="b amb">rating conflict</span></div>
-          <div class="wl-n">Project paused on InfoSec; summary still reads Green</div>
+          <div class="wl-hd"><span class="wl-a">Unum</span><span class="wl-mv" style="color:var(--red)">🟡 → 🔴</span></div>
+          <div class="wl-bd"><span class="b red">escalated</span><span class="b red">data anomaly</span><span class="b amb">owner exit mid-flight</span></div>
+          <div class="wl-n">Track B internally Red; accuracy cross-check blocked before 7 Sep</div>
         </div>
       </div>
       </div>
-      <div><div class="wl-sec">🟡 Yellow — 8 of 9</div>
+      <div><div class="wl-sec">🟡 Yellow — 9 of 12</div>
       <div class="wl-r">
         <div class="wl-rail y"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">MetLife</span><span class="wl-mv" style="color:var(--yellow)">4w 🟡</span></div>
-          <div class="wl-bd"><span class="b yel">4w yellow</span><span class="b amb">scope unfinalised</span></div>
-          <div class="wl-n">Capacity planning scope open a fourth week</div>
+          <div class="wl-hd"><span class="wl-a">MetLife</span><span class="wl-mv" style="color:var(--yellow)">5w 🟡</span></div>
+          <div class="wl-bd"><span class="b yel">5w yellow</span><span class="b amb">scope unfinalised</span><span class="b amb">sync unresolved</span></div>
+          <div class="wl-n">Capacity-planning scope open a fifth week</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail y"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Wipro</span><span class="wl-mv" style="color:var(--yellow)">4w 🟡</span></div>
-          <div class="wl-bd"><span class="b yel">4w yellow</span><span class="b red">28 Aug → mid-Sep</span></div>
-          <div class="wl-n">Timeline slipped two weeks on Wipro IT dependencies</div>
+          <div class="wl-hd"><span class="wl-a">Infoniqa</span><span class="wl-mv" style="color:var(--yellow)">4w 🟡</span></div>
+          <div class="wl-bd"><span class="b yel">4w yellow</span><span class="b red">OCR defect</span><span class="b amb">stale header</span></div>
+          <div class="wl-n">Case-ID characters misread; full PD rerun waits for 11 Sep</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail y"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Infoniqa</span><span class="wl-mv" style="color:var(--yellow)">3w 🟡</span></div>
-          <div class="wl-bd"><span class="b yel">3w yellow</span><span class="b grn">Austria in PD</span><span class="b amb">new process gated</span></div>
-          <div class="wl-n">Waiting on Adrian's return on 24 Aug</div>
+          <div class="wl-hd"><span class="wl-a">Pathstone</span><span class="wl-mv" style="color:var(--yellow)">4w 🟡</span></div>
+          <div class="wl-bd"><span class="b yel">4w yellow</span><span class="b amb">no reason tag</span><span class="b amb">stale header</span></div>
+          <div class="wl-n">21 Aug VA fault still open on seven users; go/no-go owed</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail y"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Pathstone</span><span class="wl-mv" style="color:var(--yellow)">3w 🟡</span></div>
-          <div class="wl-bd"><span class="b yel">3w yellow</span><span class="b amb">new VA fault 21 Aug</span></div>
-          <div class="wl-n">Fix applied 19 Aug, seven users broke again on 21st</div>
+          <div class="wl-hd"><span class="wl-a">Securian Financial</span><span class="wl-mv" style="color:var(--yellow)">3w 🟡</span></div>
+          <div class="wl-bd"><span class="b yel">3w yellow</span><span class="b amb">thin evidence</span></div>
+          <div class="wl-n">One-line submission for a third consecutive week</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail y"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Avalara</span><span class="wl-mv" style="color:var(--yellow)">🔴 → 🟡</span></div>
-          <div class="wl-bd"><span class="b grn">de-escalation verified</span><span class="b grn">now dated 28 Aug</span></div>
-          <div class="wl-n">Broke a 3-week Red; plan carries firm dates</div>
+          <div class="wl-hd"><span class="wl-a">Sun Life Financial</span><span class="wl-mv" style="color:var(--yellow)">🔴 → 🟡</span></div>
+          <div class="wl-bd"><span class="b grn">extension issue fixed</span><span class="b grn">walkthroughs closed</span><span class="b amb">rating conflict</span></div>
+          <div class="wl-n">Broke a 2-week Red; summary still headed "Reason for Red"</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail y"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Vistra</span><span class="wl-mv" style="color:var(--yellow)">🟢 → 🟡</span></div>
-          <div class="wl-bd"><span class="b red">+ infra delays</span><span class="b red">+ product ch.</span><span class="b amb">rating conflict</span></div>
-          <div class="wl-n">Three new reason tags; summary still reads Green</div>
+          <div class="wl-hd"><span class="wl-a">Lincoln Financials</span><span class="wl-mv" style="color:var(--yellow)">🔴 → 🟡</span></div>
+          <div class="wl-bd"><span class="b grn">gateway cliff cleared</span><span class="b grn">backlog draining</span><span class="b amb">masking open</span></div>
+          <div class="wl-n">VDI extended to 30 Sep; 460K left at ~98K/day</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail y"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Securian Financial</span><span class="wl-mv" style="color:var(--yellow)">2w 🟡</span></div>
-          <div class="wl-bd"><span class="b amb">thin evidence</span><span class="b amb">summary unchanged</span></div>
-          <div class="wl-n">Same one-line submission as last week</div>
+          <div class="wl-hd"><span class="wl-a">Brillio</span><span class="wl-mv" style="color:var(--yellow)">🔴 → 🟡</span></div>
+          <div class="wl-bd"><span class="b grn">5.9.1 a day early</span><span class="b grn">8 Sep locked</span><span class="b red">training 30%</span></div>
+          <div class="wl-n">PDD requested as a readout deliverable does not exist in-product</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail y"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">UHG - Optum</span><span class="wl-mv" style="color:var(--yellow)">🟢 → 🟡</span></div>
-          <div class="wl-bd"><span class="b red">+ infra delays</span><span class="b red">renewal risk</span><span class="b amb">5.X start missed</span></div>
-          <div class="wl-n">5.X slipped to early Sep; renewal exposure named</div>
+          <div class="wl-hd"><span class="wl-a">American Express</span><span class="wl-mv" style="color:var(--yellow)">🔴 → 🟡</span></div>
+          <div class="wl-bd"><span class="b grn">relaunched</span><span class="b red">new privacy blocker</span><span class="b amb">CVM handover</span></div>
+          <div class="wl-n">Infra ready 9 Sep; privacy agreement scope still unknown</div>
+        </div>
+      </div>
+      <div class="wl-r">
+        <div class="wl-rail y"></div>
+        <div class="wl-body">
+          <div class="wl-hd"><span class="wl-a">UHG - Optum</span><span class="wl-mv" style="color:var(--yellow)">2w 🟡</span></div>
+          <div class="wl-bd"><span class="b yel">2w yellow</span><span class="b amb">no plan</span><span class="b red">FQDN pending</span></div>
+          <div class="wl-n">First 5.X process reverted to 4.X because of the infra delay</div>
         </div>
       </div>
       </div>
-      <div><div class="wl-sec">🟢 Green — 5 of 13</div>
+      <div><div class="wl-sec">🟢 Green — 5 of 12</div>
       <div class="wl-r">
         <div class="wl-rail g"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Humana</span><span class="wl-mv" style="color:var(--green)">🟡 → 🟢</span></div>
-          <div class="wl-bd"><span class="b grn">readout landed</span><span class="b amb">no plan on file</span></div>
-          <div class="wl-n">DMS readout completed 18 Aug; next steps open</div>
+          <div class="wl-hd"><span class="wl-a">Vistra</span><span class="wl-mv" style="color:var(--green)">🟡 → 🟢</span></div>
+          <div class="wl-bd"><span class="b grn">verified</span><span class="b grn">VDI path agreed</span></div>
+          <div class="wl-n">Remote-desktop usage confined to under 10% of active time</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail g"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">Reflect Health</span><span class="wl-mv" style="color:var(--green)">🟡 → 🟢</span></div>
-          <div class="wl-bd"><span class="b grn">verified</span><span class="b grn">gateway live 19 Aug</span></div>
-          <div class="wl-n">Infra complete, VA E2E connectivity confirmed</div>
+          <div class="wl-hd"><span class="wl-a">Madison Square Garden</span><span class="wl-mv" style="color:var(--green)">⬜ → 🟢</span></div>
+          <div class="wl-bd"><span class="b gry">first submission</span><span class="b grn">governance adopted</span></div>
+          <div class="wl-n">Filed after two missed weeks; weekly PMO live from 26 Aug</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail g"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">NextEra Energy</span><span class="wl-mv" style="color:var(--green)">⬜ → 🟢</span></div>
-          <div class="wl-bd"><span class="b gry">first submission</span><span class="b amb">no plan</span></div>
-          <div class="wl-n">Filed after two missed weeks under Cameron Butler</div>
+          <div class="wl-hd"><span class="wl-a">Humana</span><span class="wl-mv" style="color:var(--green)">2w 🟢</span></div>
+          <div class="wl-bd"><span class="b grn">readout done</span><span class="b amb">Citrix CR stalled</span></div>
+          <div class="wl-n">~150 RxE users stuck in "manager approved" on Humana's side</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail g"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">WR Berkeley</span><span class="wl-mv" style="color:var(--green)">⬜ → 🟢</span></div>
-          <div class="wl-bd"><span class="b gry">first submission</span><span class="b amb">no plan</span></div>
-          <div class="wl-n">Handover done 19 Aug; kickoff set for 3 Sep</div>
+          <div class="wl-hd"><span class="wl-a">Allianz Germany</span><span class="wl-mv" style="color:var(--green)">2w 🟢</span></div>
+          <div class="wl-bd"><span class="b grn">all processes complete</span><span class="b amb">contract ended 30 Jun</span></div>
+          <div class="wl-n">Green on completion, not on activity; extension talks open</div>
         </div>
       </div>
       <div class="wl-r">
         <div class="wl-rail g"></div>
         <div class="wl-body">
-          <div class="wl-hd"><span class="wl-a">US Bank</span><span class="wl-mv" style="color:var(--green)">NEW → 🟢</span></div>
-          <div class="wl-bd"><span class="b gry">new to base</span><span class="b amb">placeholder plan</span></div>
-          <div class="wl-n">Two processes scoped; infra model still moving</div>
+          <div class="wl-hd"><span class="wl-a">Capita</span><span class="wl-mv" style="color:var(--green)">2w 🟢</span></div>
+          <div class="wl-bd"><span class="b grn">ICC complete</span><span class="b grn">readout next</span></div>
+          <div class="wl-n">HR Onboarding heading to final stakeholder readout</div>
         </div>
       </div>
 
@@ -400,19 +394,25 @@ table.gg.sky-h thead th{background:var(--sky-soft);color:var(--sky)}
       <div class="wl-r">
         <div class="wl-body">
           <div class="wl-bd">
-            <span class="b amb">no PM</span><span class="wl-n" style="margin:0 0 0 4px">The Hartford · BlackBox · Scan Health</span>
+            <span class="b amb">no plan</span><span class="wl-n" style="margin:0 0 0 4px">The Hartford (Red) · UHG - Optum (Yellow)</span>
           </div>
           <div class="wl-bd" style="margin-top:5px">
-            <span class="b amb">no plan</span><span class="wl-n" style="margin:0 0 0 4px">The Hartford · American Express — both Red</span>
+            <span class="b amb">rating conflict</span><span class="wl-n" style="margin:0 0 0 4px">Sun Life Financial · American Express · Bank of America — field and summary disagree</span>
           </div>
           <div class="wl-bd" style="margin-top:5px">
-            <span class="b amb">rating conflict</span><span class="wl-n" style="margin:0 0 0 4px">American Express · Vistra — field and summary disagree</span>
+            <span class="b amb">stale summary</span><span class="wl-n" style="margin:0 0 0 4px">Pathstone "Week of 30 July" · Infoniqa "Week of August 17"</span>
           </div>
           <div class="wl-bd" style="margin-top:5px">
-            <span class="b amb">stale summary</span><span class="wl-n" style="margin:0 0 0 4px">Equitable · still headed "Week of Aug 10"</span>
+            <span class="b amb">no reason tag</span><span class="wl-n" style="margin:0 0 0 4px">Pathstone · Avalara · American Express</span>
           </div>
           <div class="wl-bd" style="margin-top:5px">
-            <span class="b amb">placeholder plan</span><span class="wl-n" style="margin:0 0 0 4px">US Bank · Cardinal Health · Thrivent Financials</span>
+            <span class="b gry">no PM by design</span><span class="wl-n" style="margin:0 0 0 4px">BlackBox · Bank of America · Lexis Nexis — CVM-led, professional services not in scope</span>
+          </div>
+          <div class="wl-bd" style="margin-top:5px">
+            <span class="b amb">PM not assigned</span><span class="wl-n" style="margin:0 0 0 4px">The Hartford — Shira Hirsh covering as CVM, sales/offboarding only</span>
+          </div>
+          <div class="wl-bd" style="margin-top:5px">
+            <span class="b gry">not yet kicked off</span><span class="wl-n" style="margin:0 0 0 4px">Scan Health — awaiting sales handover and customer kickoff call</span>
           </div>
         </div>
       </div>
@@ -426,169 +426,175 @@ table.gg.sky-h thead th{background:var(--sky-soft);color:var(--sky)}
 
 <div class="detail">
     <!-- RED -->
-    <div class="sh red">🔴 Red — 8 Accounts</div>
+    <div class="sh red">🔴 Red — 6 Accounts</div>
     <table>
       <thead><tr><th>Account</th><th>Team</th><th>Plan Owners</th><th>Status</th><th>Reason &amp; Summary</th><th>Go-to-Green</th><th>Target</th></tr></thead>
       <tbody>
         <tr>
-          <td><div class="acct">Equitable</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">4w 🔴</div></td>
-          <td><div class="pm">PM: Ritu Rawat</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Sujay Shah · SC: Naveen Kumar · TAM: Eric Edwards · PL: Sarah Sachse-Pasqua</div></td>
-          <td><div class="own-list"><span class="own-n">Sarah Sachse-Pasqua</span><span class="own-r">PL</span><span class="own-sep">·</span> <span class="own-n">Incoming Skan owner</span><span class="own-sep">·</span> <span class="own-n">Ritu Rawat</span><span class="own-r">PM</span></div></td>
+          <td><div class="acct">Wipro</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">🟡 → 🔴 · Escalated</div></td>
+          <td><div class="pm">PM: Richa Koul</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Anupam Kumar · SC: Vijay Surisetty · TAM: Soman Nair · PL: Ankur Tandon</div></td>
+          <td><div class="own-list"><span class="own-n">Rahul Banerjee</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Nishant</span><span class="own-sep">·</span> <span class="own-n">Aldo Corea</span><span class="own-r">TAM</span><span class="own-sep">·</span> <span class="own-n">Richa Koul</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Ankur Tandon</span><span class="own-r">PL</span></div></td>
           <td><span class="badge red">Red</span></td>
-          <td><div class="tag">Adoption &amp; Value</div><div class="txt">Readout is blocked by data quality — roughly 27K events are landing as task names. The account is being paused from September to December pending handover to a new Skan owner.</div></td>
+          <td><div class="tag">Infrastructure delays</div><div class="tag">Delay from Business</div><div class="txt">Wipro's internal infra approval chain runs 23–24 steps across security, network, procurement and budget, so the 28 Aug gateway target is gone and mid-September is the realistic date — still unconfirmed by Wipro. Nothing downstream can start: configuration, walkthroughs, Iteration 0 and collection for both HR BGV and Finance are gated on the gateway. The pilot is the proof point for the wider ~200-licence, ~$3M platform deal.</div></td>
+          <td><div class="gogreen">→ Escalate through Erik's network to Rahul Banerjee (Wipro CIO) to unblock the approval queue, send the bare-minimum infra proposal and cost-scaling curve this week, close the end-user monitoring question with a walkthrough, and finalise the SOV for both processes so delivery moves the moment infra clears.</div></td>
+          <td><div class="tgt r">Mid-Sep</div></td>
+        </tr>
+        <tr>
+          <td><div class="acct">Unum</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">🟡 → 🔴 · Escalated</div></td>
+          <td><div class="pm">PM: Stefnie Howley, Harshita Srivastava</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Marcin Citak, Sarah Sachse-Pasqua · SC: Rahul Raj · TAM: Kevin Curtis · PL: Marcin Citak, Sarah Sachse-Pasqua</div></td>
+          <td><div class="own-list"><span class="own-n">Track A team</span><span class="own-sep">·</span> <span class="own-n">Track B team</span><span class="own-sep">·</span> <span class="own-n">Stefnie Howley</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Harshita Srivastava</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Marcin Citak</span><span class="own-r">PL</span></div></td>
+          <td><span class="badge red">Red</span></td>
+          <td><div class="tag">Delay from Business</div><div class="tag">Impl. Challenges</div><div class="txt">A file change introduced a data anomaly and report accuracy can no longer be cross-checked, which puts Track B internally Red. The team is working the weekend across all report tabs to protect Wave 1 on 7 Sep. Client Success deployment stays blocked with no participants assigned to the Finance IBU persona, and Nikita's resignation removes the Caroline relationship owner mid-flight while Sahil is still access-blocked.</div></td>
+          <td><div class="gogreen">→ Run the three-track plan: Track A stabilises the live reports and is what actually turns the RAG green, Track B re-architects for Databricks contention and direct-query load, Track C recovers the June commitments to Caroline. Daily data-quality validation before the 09:30 ops deadline, a standing RCA process for Unum-side data gaps, and a single comms channel through the PM.</div></td>
+          <td><div class="tgt r">7 Sep</div></td>
+        </tr>
+        <tr>
+          <td><div class="acct">Equitable</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">5w 🔴</div></td>
+          <td><div class="pm">PM: Ritu Rawat</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Sujay Shah, Anamitra Sarkar · SC: Naveen Kumar · TAM: Eric Edwards · PL: Sarah Sachse-Pasqua</div></td>
+          <td><div class="own-list"><span class="own-n">Sarah Sachse-Pasqua</span><span class="own-r">PL</span><span class="own-sep">·</span> <span class="own-n">Rexy Joseph</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Ritu Rawat</span><span class="own-r">PM</span></div></td>
+          <td><span class="badge red">Red</span></td>
+          <td><div class="tag">Adoption &amp; Value</div><div class="txt">The account is fully paused from September to December pending engagement with the incoming Skan owner, Rexy Joseph from Corebridge, in late September or early October. Both personas sit Green at stage level and the GR New Business readout completed, but the professional-services contract ends 31 Aug and GR NB data quality is still an open issue.</div></td>
           <td><div class="gogreen">→ Open the conversation with the new Skan leader and align on next steps for the account before the September pause begins.</div></td>
           <td><div class="tgt ok">TBC</div></td>
         </tr>
         <tr>
-          <td><div class="acct">Dell Technologies</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">4w 🔴</div></td>
-          <td><div class="pm">PM: Nitin Goyal</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Nikita Goyanka · SC: Dhruv Shah · TAM: Eric Edwards · PL: Preeti</div></td>
-          <td><div class="own-list"><span class="own-n">Chris</span><span class="own-sep">·</span> <span class="own-n">Preeti</span><span class="own-r">PL</span><span class="own-sep">·</span> <span class="own-n">Chaitrali</span><span class="own-sep">·</span> <span class="own-n">Eugene</span><span class="own-sep">·</span> <span class="own-n">Nitin Goyal</span><span class="own-r">PM</span></div></td>
+          <td><div class="acct">Wells Fargo</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">4w 🔴</div></td>
+          <td><div class="pm">PM: Luis</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Yancy Rivera · SC: Krishna Sagar Sankarsetty · TAM: Soman Nair, Amit Choudhury · PL: Preeti</div></td>
+          <td><div class="own-list"><span class="own-n">Anu P</span><span class="own-r">PROD</span><span class="own-sep">·</span> <span class="own-n">Krishna Sagar Sankarsetty</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Luis</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Yancy Rivera</span><span class="own-r">CVM</span></div></td>
           <td><span class="badge red">Red</span></td>
-          <td><div class="tag">Product Challenges</div><div class="txt">Meetings over the next two to three weeks will decide the renewal. The agentic build is still pending and may slip further, and the single integrated storyline is not finished.</div></td>
-          <td><div class="gogreen">→ Chris, Preeti, Chaitrali and Eugene to land one integrated story ahead of the renewal conversations.</div></td>
+          <td><div class="tag">Adoption &amp; Value</div><div class="tag">Impl. Challenges</div><div class="tag">Product Challenges</div><div class="txt">Delivery is moving — 5.6.29/30 deployed in Dev and Prod with the Flink fallback tool, 5.9 released 20 Aug and live in pre-prod, first Superset session complete — and the business found the FCM Claims Assistance Center insights useful. The bank still will not offer Skan process analysis internally until platform stability improves, and a high volume of FreshDesk tickets sits unowned and unclosed.</div></td>
+          <td><div class="gogreen">→ Continue 5.x PD runs to the WF-Skan plan targeting completion by 31 Aug, confirm 5.9.1 in Dev and Prod, conclude FreshDesk ownership internally and start proactively clearing tickets, and deliver the second Superset session on 1 Sep.</div></td>
           <td><div class="tgt y">4 Sep</div></td>
         </tr>
         <tr>
-          <td><div class="acct">Wells Fargo</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">3w 🔴</div></td>
-          <td><div class="pm">PM: Luis</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Yancy Rivera · SC: Krishna Sagar Sankarsetty · TAM: Soman Nair · PL: Preeti</div></td>
-          <td><div class="own-list"><span class="own-n">Product / Engineering</span><span class="own-sep">·</span> <span class="own-n">Krishna Sagar Sankarsetty</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Luis</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Yancy Rivera</span><span class="own-r">CVM</span></div></td>
+          <td><div class="acct">The Hartford</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">3w 🔴 · Churn notice</div></td>
+          <td><div class="pm">PM: not assigned</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Shira Hirsh · SC: Manisha Duggal · TAM: Piyush Chaturvedi · PL: Sarah Sachse-Pasqua</div></td>
+          <td><div class="own-none">⚠ No Go-to-Green plan on file. No implementation work is running — sales and offboarding conversations only, so no PM is assigned. Shira Hirsh (CVM) and Sarah Sachse-Pasqua (PL) own the plan.</div></td>
           <td><span class="badge red">Red</span></td>
-          <td><div class="tag">Adoption &amp; Value</div><div class="tag">Impl. Challenges</div><div class="tag">Product Challenges</div><div class="txt">Both committed releases shipped on schedule — 5.6.30 on 17 Aug enabling Dev PD runs, and 5.9 on 20 Aug. Prod deployment of 5.6.29 and 5.6.30 is underway, but the bank has not restored process analysis to its service offering.</div></td>
-          <td><div class="gogreen">→ Continue 5.x PD runs to the WF-Skan plan, complete the 5.9 pre-prod deployment on 24 Aug, and finish Superset deployment and enablement.</div></td>
-          <td><div class="tgt r">24 Aug</div></td>
-        </tr>
-        <tr>
-          <td><div class="acct">Sun Life Financial</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">2w 🔴</div></td>
-          <td><div class="pm">PM: Ritu Rawat</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Shira Hirsh · SC: Piyush Khatri · TAM: Aldo Corea · PL: Sarah Sachse-Pasqua</div></td>
-          <td><div class="own-list"><span class="own-n">Piyush Khatri</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Aldo Corea</span><span class="own-r">TAM</span><span class="own-sep">·</span> <span class="own-n">Ritu Rawat</span><span class="own-r">PM</span></div></td>
-          <td><span class="badge red">Red</span></td>
-          <td><div class="tag">Product Challenges</div><div class="txt">The browser-extension issue is still blocking collection for most participants, a second week running. Initial workforce insights remain pushed out and the first walkthrough, planned for 21 Aug, was rescheduled.</div></td>
-          <td><div class="gogreen">→ Deploy Edge and Chrome extensions to all participants, validate and start collection, then schedule the Process Insights walkthroughs and configure against a sample.</div></td>
-          <td><div class="tgt r">28 Aug</div></td>
-        </tr>
-        <tr>
-          <td><div class="acct">The Hartford</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">2w 🔴 · Churn notice</div></td>
-          <td><div class="pm">PM: unset</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Shira Hirsh · SC: Manisha Duggal · TAM: Piyush Chaturvedi · PL: Sarah Sachse-Pasqua</div></td>
-          <td><div class="own-none">⚠ No Go-to-Green plan on file — no owners assigned. Sarah Sachse-Pasqua (PL) to enter a plan; no PM on this account.</div></td>
-          <td><span class="badge red">Red</span></td>
-          <td><div class="tag">Lack of Key Stakeholder</div><div class="txt">Termination notice stands and procurement declined the free run-on through January 2027. Megan (AVP, Ops) indicated possible interest in continuous observation through end of 2026, which would require free services.</div></td>
+          <td><div class="tag">Lack of Key Stakeholder</div><div class="tag">Adoption &amp; Value</div><div class="txt">Termination notice stands and procurement declined the no-cost run-on through January 2027. Megan (AVP, Ops) indicated she may want continuous observation through end-2026. Boris and Sarah met her on 24 Aug but follow-ups cannot be confirmed until both return from PTO on 2 Sep. Boris is setting up a meeting with Erin Conception, director of sales support. No progress elsewhere in Hartford.</div></td>
           <td><div class="gogreen">→ No Go-to-Green plan entered in the task.</div></td>
-          <td><div class="tgt r">24 Aug</div></td>
+          <td><div class="tgt r">2 Sep</div></td>
         </tr>
         <tr>
-          <td><div class="acct">Lincoln Financials</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">🟡 → 🔴 · Escalated</div></td>
-          <td><div class="pm">PM: Kaustubh Bharadwaj</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Sujay Shah · SC: Naveen Kumar · TAM: Aldo Corea · PL: Sarah Sachse-Pasqua</div></td>
-          <td><div class="own-list"><span class="own-n">Kaustubh Bharadwaj</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">RG</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Binod</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Naveen Kumar</span><span class="own-r">SC</span></div></td>
+          <td><div class="acct">Dell Technologies</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">5w 🔴</div></td>
+          <td><div class="pm">PM: Nitin Goyal</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Nikita Goyanka · SC: Dhruv Shah · TAM: Eric Edwards · PL: Preeti</div></td>
+          <td><div class="own-list"><span class="own-n">Chris</span><span class="own-sep">·</span> <span class="own-n">Preeti</span><span class="own-r">PL</span><span class="own-sep">·</span> <span class="own-n">Chaitrali</span><span class="own-sep">·</span> <span class="own-n">Eugene</span><span class="own-sep">·</span> <span class="own-n">Nitin Goyal</span><span class="own-r">PM</span></div></td>
           <td><span class="badge red">Red</span></td>
-          <td><div class="tag">Impl. Challenges</div><div class="tag">Product Challenges</div><div class="txt">A masking and OCR pileup has blocked all new data for roughly 19 days. Root cause was found and fixed on 18 Aug — a missing text_fields collection — but clearing the backlog needs a compute upgrade.</div></td>
-          <td><div class="gogreen">→ Land the compute upgrade CR by 25 Aug. Skan sends the upgrade vs no-upgrade impact model to RG and Binod by 24 Aug, framed as pilot timeline risk rather than infrastructure spend.</div></td>
-          <td><div class="tgt r">25 Aug</div></td>
-        </tr>
-        <tr>
-          <td><div class="acct">Brillio</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">🟡 → 🔴 · Escalated</div></td>
-          <td><div class="pm">PM: Kaustubh Bharadwaj</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Kishen Padiyar · SC: Manisha Duggal · TAM: Eric Edwards · PL: Sumit Punjabi</div></td>
-          <td><div class="own-list"><span class="own-n">Prasanna</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Kaustubh Bharadwaj</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Manisha Duggal</span><span class="own-r">SC</span></div></td>
-          <td><span class="badge red">Red</span></td>
-          <td><div class="tag">Impl. Challenges</div><div class="tag">Product Challenges</div><div class="txt">Iteration 1 data collection closed on schedule on 21 Aug across all three participants. The account is Red on the client side — a decision backlog covering IT availability, extract format and VA scope is holding everything downstream.</div></td>
-          <td><div class="gogreen">→ Unblock the decision backlog by 24 Aug with Prasanna confirming Brillio IT availability for 27 Aug plus extract format and VA scope, then lock the 8 Sep readout date, time and attendee list.</div></td>
-          <td><div class="tgt r">24 Aug</div></td>
-        </tr>
-        <tr>
-          <td><div class="acct">American Express</div><div style="font-size:9px;color:var(--red);font-weight:700;margin-top:2px">🟢 → 🔴 · Two-step drop</div></td>
-          <td><div class="pm">PM: Stefnie Howley</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Goutham · SC: Vedesh Kumar · TAM: Aldo Corea · PL: Isaac Sierra</div></td>
-          <td><div class="own-none">⚠ No Go-to-Green plan on file — no owners assigned. Stefnie Howley (PM) and Isaac Sierra (PL) to enter a plan.</div></td>
-          <td><span class="badge red">Red</span></td>
-          <td><div class="txt">No reason tag entered. Project is paused: InfoSec delays tied to MRMG approval have stalled progress and the original Global Servicing use case has slipped. Stephen's MRMG response went out on 31 Jul.</div></td>
-          <td><div class="gogreen">→ No Go-to-Green plan entered in the task.</div></td>
-          <td><div class="tgt ok">TBC</div></td>
+          <td><div class="tag">Product Challenges</div><div class="txt">Meetings in the first week of September will decide the renewal. Agentic is still pending and may slip further, and the single cohesive storyline for the leadership meeting is unfinished. ISG has had its first project-team review with the Agentic operating playbook drafted next; CSG's first review is not yet scheduled. Blueprint's final insight call is done but Dell is changing its tech stack including CRM, which may force a repeat observation.</div></td>
+          <td><div class="gogreen">→ Chris, Preeti, Chaitrali and Eugene to land one integrated story ahead of the renewal conversations.</div></td>
+          <td><div class="tgt r">4 Sep</div></td>
         </tr>
       </tbody>
     </table>
 
     <!-- YELLOW -->
-    <div class="sh yellow">🟡 Yellow — 9 Accounts</div>
+    <div class="sh yellow">🟡 Yellow — 12 Accounts</div>
     <table>
       <thead><tr><th>Account</th><th>Team</th><th>Plan Owners</th><th>Status</th><th>Reason &amp; Summary</th><th>Target</th></tr></thead>
       <tbody>
         <tr>
-          <td><div class="acct">MetLife</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">4w 🟡</div></td>
-          <td><div class="pm">PM: Nitin Goyal</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Sujay Shah · SC: Erin Nielsen, Vivek Jadhav · TAM: Kevin Curtis · PL: Sarah Sachse-Pasqua</div></td>
-          <td><div class="own-list"><span class="own-n">Frank</span><span class="own-sep">·</span> <span class="own-n">Venu</span><span class="own-sep">·</span> <span class="own-n">Anthony</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Nitin Goyal</span><span class="own-r">PM</span></div></td>
+          <td><div class="acct">MetLife</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">5w 🟡</div></td>
+          <td><div class="pm">PM: Nitin Goyal</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Sujay Shah · SC: Erin Nielsen, Vivek Jadhav · TAM: Kishore Dandu · PL: Sarah Sachse-Pasqua</div></td>
+          <td><div class="own-list"><span class="own-n">Frank</span><span class="own-sep">·</span> <span class="own-n">Venu</span><span class="own-sep">·</span> <span class="own-n">MetLife governance team</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Nitin Goyal</span><span class="own-r">PM</span></div></td>
           <td><span class="badge yellow">Yellow</span></td>
-          <td><div class="tag">Delay from Business</div><div class="tag">Product Challenges</div><div class="txt">Catalyst Process Intelligence reports still need finalising against Anthony's suggestions, with Frank and Venu working the requirement. Capacity planning scope remains open. Beats installation call was held 18 Aug; follow-up calls sit next week.</div></td>
-          <td><div class="tgt y">28 Aug</div></td>
+          <td><div class="tag">Delay from Business</div><div class="tag">Product Challenges</div><div class="txt">Catalyst Process Intelligence reports are still being configured iteratively, capacity-planning scope is unfinalised, the out-of-sync data issue is unresolved and an agentic technical limitation blocks the 20-person POC. On the credit side all unit managers are trained and actively using unit-leader dashboards, and PFL Iteration 0 has started pending PCD sign-off.</div></td>
+          <td><div class="tgt y">4 Sep</div></td>
         </tr>
         <tr>
-          <td><div class="acct">Wipro</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">4w 🟡</div></td>
-          <td><div class="pm">PM: Richa Koul</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Anupam Kumar · SC: Vijay Surisetty · TAM: Soman Nair · PL: Ankur Tandon</div></td>
-          <td><div class="own-list"><span class="own-n">Wipro IT</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Richa Koul</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Ankur Tandon</span><span class="own-r">PL</span></div></td>
-          <td><span class="badge yellow">Yellow</span></td>
-          <td><div class="tag">Infrastructure delays</div><div class="tag">Delay from Business</div><div class="txt">The original three-week timeline to 28 Aug has now formally slipped to mid-September on internal Wipro dependencies. Infra SPOCs are in place from Wipro IT but the dependency list has not been shared.</div></td>
-          <td><div class="tgt r">Mid-Sep</div></td>
-        </tr>
-        <tr>
-          <td><div class="acct">Infoniqa</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">3w 🟡</div></td>
+          <td><div class="acct">Infoniqa</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">4w 🟡</div></td>
           <td><div class="pm">PM: Harshita Srivastava</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Jonathan Salzwedel · SC: Ann Mathai · TAM: Goutham S · PL: Ankur Tandon</div></td>
-          <td><div class="own-list"><span class="own-n">Adrian</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Harshita Srivastava</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Ann Mathai</span><span class="own-r">SC</span></div></td>
+          <td><div class="own-list"><span class="own-n">Adrian</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Ann Mathai</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Vedesh Kumar</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Harshita Srivastava</span><span class="own-r">PM</span></div></td>
           <td><span class="badge yellow">Yellow</span></td>
-          <td><div class="tag">Impl. Challenges</div><div class="tag">Product Challenges</div><div class="txt">Austria is in Process Discovery with a PD run on the first three weeks of data completed 18 Aug; the project stays in PD until collection closes on 11 Sep. New process identification is gated on Adrian's return on 24 Aug.</div></td>
+          <td><div class="tag">Impl. Challenges</div><div class="tag">Product Challenges</div><div class="txt">A critical OCR defect misreads case-ID special characters (# read as Z), creating duplicate cases and invalidating process analysis. It is a known product issue, not project-specific; the fix is a correction script on historical data plus a full PD rerun once collection closes on 11 Sep. The client demo was scaled back to reliable Workforce data only, and new process identification is still gated on Adrian.</div></td>
           <td><div class="tgt y">11 Sep</div></td>
         </tr>
         <tr>
-          <td><div class="acct">Pathstone</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">3w 🟡</div></td>
+          <td><div class="acct">Pathstone</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">4w 🟡</div></td>
           <td><div class="pm">PM: Harshita Srivastava</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Nandhagopal Muralithar · SC: Ankit Jha, Abbas Jafri · TAM: Jose Rodriguez · PL: Isaac Sierra</div></td>
-          <td><div class="own-list"><span class="own-n">Skan Infra Engineering</span><span class="own-r">ENG</span><span class="own-sep">·</span> <span class="own-n">Harshita Srivastava</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Ankit Jha</span><span class="own-r">SC</span></div></td>
+          <td><div class="own-list"><span class="own-n">Skan Infra Engineering</span><span class="own-r">ENG</span><span class="own-sep">·</span> <span class="own-n">Ankit Jha</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Harshita Srivastava</span><span class="own-r">PM</span></div></td>
           <td><span class="badge yellow">Yellow</span></td>
-          <td><div class="tag">Delay from Business</div><div class="txt">VA installation was delayed by the client's infra team. Skan Infra Engineering diagnosed and applied a fix on 19 Aug, but a fresh connectivity and app-visibility fault hit seven newly deployed users on 21 Aug and is still under investigation.</div></td>
+          <td><div class="txt">No reason tag entered. The 21 Aug VA connectivity and app-visibility fault on seven newly deployed users is still with Skan infra, and the data-collection start needs a go/no-go early this week. Final participant confirmation of roughly 18–20 users and outstanding application URLs and MSIDs are still owed by Pathstone. Environment gate and SOV are complete; Iteration 0 and dashboard build are in progress.</div></td>
           <td><div class="tgt ok">TBC</div></td>
         </tr>
         <tr>
-          <td><div class="acct">Unum</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">2w 🟡</div></td>
-          <td><div class="pm">PM: Stefnie Howley, Harshita Srivastava</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Marcin Citak · SC: Rahul Raj · TAM: Kevin Curtis · PL: Marcin Citak, Sarah Sachse-Pasqua</div></td>
-          <td><div class="own-list"><span class="own-n">Track A team</span><span class="own-sep">·</span> <span class="own-n">Track B team</span><span class="own-sep">·</span> <span class="own-n">Stefnie Howley</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Marcin Citak</span><span class="own-r">PL</span></div></td>
-          <td><span class="badge yellow">Yellow</span></td>
-          <td><div class="tag">Delay from Business</div><div class="tag">Impl. Challenges</div><div class="txt">Stabilising, but Track B slipped this week. Track A is holding green with single owners now assigned to the critical LES, LS and ES reports to prevent gaps. Root-cause work on Databricks cluster contention and direct-query load continues.</div></td>
-          <td><div class="tgt ok">TBC</div></td>
-        </tr>
-        <tr>
-          <td><div class="acct">Securian Financial</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">2w 🟡</div></td>
+          <td><div class="acct">Securian Financial</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">3w 🟡</div></td>
           <td><div class="pm">PM: Shira Hirsh</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Shira Hirsh · SC: Piyush Khatri · TAM: Aldo Corea · PL: Sarah Sachse-Pasqua</div></td>
           <td><div class="own-list"><span class="own-n">Securian config team</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Shira Hirsh</span><span class="own-r">PM</span></div></td>
           <td><span class="badge yellow">Yellow</span></td>
-          <td><div class="tag">Product Challenges</div><div class="txt">Delivery enablement is still unconfirmed — it is not yet known whether the client team can take on configuration independently for upcoming processes once training wraps. Submission is unchanged from last week.</div></td>
+          <td><div class="tag">Product Challenges</div><div class="txt">Delivery enablement remains unconfirmed — it is still not established whether the client team can own configuration independently for upcoming processes once training wraps. Securian is currently owning the Underwriting configuration, and the account moves to Green once that ownership is proven. The submission is a single line for a third consecutive week.</div></td>
           <td><div class="tgt ok">TBC</div></td>
         </tr>
         <tr>
-          <td><div class="acct">Avalara</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">🔴 → 🟡 · Broke 3w Red</div></td>
+          <td><div class="acct">Sun Life Financial</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">🔴 → 🟡 · De-escalated</div></td>
+          <td><div class="pm">PM: Ritu Rawat</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Shira Hirsh · SC: Piyush Khatri · TAM: Aldo Corea · PL: Sarah Sachse-Pasqua</div></td>
+          <td><div class="own-list"><span class="own-n">Piyush Khatri</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Aldo Corea</span><span class="own-r">TAM</span><span class="own-sep">·</span> <span class="own-n">Ritu Rawat</span><span class="own-r">PM</span></div></td>
+          <td><span class="badge yellow">Yellow</span></td>
+          <td><div class="tag">Product Challenges</div><div class="txt">The web-extension issue is resolved and SME walkthroughs have concluded, a week late. Workforce Insights data collection has started and the timeline is re-aligned with the client. Remaining work is completing the client SME sessions, generating workforce insights and presenting initial insights. The submission is still headed "Reason for Red sentiment" against a Yellow field value.</div></td>
+          <td><div class="tgt y">4 Sep</div></td>
+        </tr>
+        <tr>
+          <td><div class="acct">Lincoln Financials</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">🔴 → 🟡 · De-escalated</div></td>
+          <td><div class="pm">PM: Kaustubh Bharadwaj</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Sujay Shah, Anamitra Sarkar · SC: Naveen Kumar · TAM: Aldo Corea · PL: Sarah Sachse-Pasqua</div></td>
+          <td><div class="own-list"><span class="own-n">Kush</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">RG</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Kristen White</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Kaustubh Bharadwaj</span><span class="own-r">PM</span></div></td>
+          <td><span class="badge yellow">Yellow</span></td>
+          <td><div class="tag">Impl. Challenges</div><div class="tag">Product Challenges</div><div class="txt">The 31 Aug gateway cliff is cleared — Kush approved VDI access to 30 Sep so automated deprovisioning will not fire, which is what moved this off Red. Backlog is draining on plan at roughly 98K/day, down from 1.07M on 21 Aug to 460K on 27 Aug, clearing around 1–2 Sep and leaving a 4–5 day validation window before the readout. Masking replay across 12–21 Aug is unverified, four apps remain on the interim fix and the disclosure decision is open.</div></td>
+          <td><div class="tgt y">7 Sep</div></td>
+        </tr>
+        <tr>
+          <td><div class="acct">Brillio</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">🔴 → 🟡 · De-escalated</div></td>
+          <td><div class="pm">PM: Kaustubh Bharadwaj</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Kishen Padiyar · SC: Manisha Duggal · TAM: Eric Edwards · PL: Sumit Punjabi</div></td>
+          <td><div class="own-list"><span class="own-n">Prasanna</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Subhro</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Kishen Padiyar</span><span class="own-r">CVM</span><span class="own-sep">·</span> <span class="own-n">Kaustubh Bharadwaj</span><span class="own-r">PM</span></div></td>
+          <td><span class="badge yellow">Yellow</span></td>
+          <td><div class="tag">Impl. Challenges</div><div class="tag">Product Challenges</div><div class="txt">Subhro confirmed 8 Sep as the final readout date and the gateway went from 5.7.5 to 5.9.1 on 26 Aug, a day ahead of commitment, with the cloud upgrade following and the SOP handed over. Two gaps remain: the Process Design Document Subhro listed as a readout deliverable does not exist in-product and is roadmapped to Q1 2027, and training sits at 30% against an Aug 31 deadline Prasanna has declined to commit a date against.</div></td>
+          <td><div class="tgt y">8 Sep</div></td>
+        </tr>
+        <tr>
+          <td><div class="acct">American Express</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">🔴 → 🟡 · De-escalated</div></td>
+          <td><div class="pm">PM: Stefnie Howley</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Goutham · SC: Vedesh Kumar · TAM: Aldo Corea · PL: Isaac Sierra</div></td>
+          <td><div class="own-list"><span class="own-n">Fabio</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Stefnie Howley</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Goutham</span><span class="own-r">CVM</span><span class="own-sep">·</span> <span class="own-n">Eric Edwards</span><span class="own-r">TAM</span><span class="own-sep">·</span> <span class="own-n">Aldo Corea</span><span class="own-r">TAM</span></div></td>
+          <td><span class="badge yellow">Yellow</span></td>
+          <td><div class="txt">No reason tag entered. The project is relaunching with strong engagement from Scott and Amex infra ready by 9 Sep per Fabio, which aligns with kickoff; the MRMG response went out as committed. The fresh risk is a new privacy-agreement requirement from the Amex privacy team, with scope unresolved — one per team or a single Skan-level agreement. The CVM is also changing mid-flight and the agentic POC is still under Amex evaluation.</div></td>
+          <td><div class="tgt y">9 Sep</div></td>
+        </tr>
+        <tr>
+          <td><div class="acct">Avalara</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">2w 🟡</div></td>
           <td><div class="pm">PM: Praveen Prakasan</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Kishen Padiyar · SC: Manisha Duggal · TAM: Sachin Gupta · PL: Sumit Punjabi</div></td>
           <td><div class="own-list"><span class="own-n">Manisha Duggal</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Praveen Prakasan</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Kishen Padiyar</span><span class="own-r">CVM</span></div></td>
           <td><span class="badge yellow">Yellow</span></td>
-          <td><div class="tag">Infrastructure delays</div><div class="tag">Impl. Challenges</div><div class="txt">Improved from Red on resolution of the data blockers. Collection is running on two processes with a firm 28 Aug completion and a readout booked for 11 Sep. Sentiment stays Amber while the fix is monitored.</div></td>
-          <td><div class="tgt y">28 Aug</div></td>
+          <td><div class="txt">No reason tag entered. Data collection completed 27 Aug and the v5.9 cloud and gateway upgrade landed 29 Aug. Three of four customer enablement sessions are done with the final one booked for 4 Sep, and readouts for both processes are set for 11 and 18 Sep. Sentiment stays Amber, improved from Red, while the resolved data blockers are monitored.</div></td>
+          <td><div class="tgt y">11 Sep</div></td>
         </tr>
         <tr>
-          <td><div class="acct">Vistra</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">🟢 → 🟡</div></td>
-          <td><div class="pm">PM: Anjana Damodara</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Anupam Kumar · SC: Sanketh Jain · TAM: Goutham S · PL: Ankur Tandon</div></td>
-          <td><div class="own-list"><span class="own-n">Kriti Kushwaha</span><span class="own-r">ENG</span><span class="own-sep">·</span> <span class="own-n">JC</span><span class="own-r">ENG</span><span class="own-sep">·</span> <span class="own-n">Sanketh Jain</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Anjana Damodara</span><span class="own-r">PM</span></div></td>
+          <td><div class="acct">Thrivent Financials</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">🟢 → 🟡</div></td>
+          <td><div class="pm">PM: Praveen Prakasan</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Nikhil Jain · SC: Mohammed Adil Baig · TAM: Jose Rodriguez · PL: Nikhil Jain</div></td>
+          <td><div class="own-list"><span class="own-n">Skan Infrastructure team</span><span class="own-r">ENG</span><span class="own-sep">·</span> <span class="own-n">Octavio</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Sheela</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Praveen Prakasan</span><span class="own-r">PM</span></div></td>
           <td><span class="badge yellow">Yellow</span></td>
-          <td><div class="tag">Infrastructure delays</div><div class="tag">Impl. Challenges</div><div class="tag">Product Challenges</div><div class="txt">Manual tagging was addressed with Product support from Kriti and JC and the fix is applied for Management Account. VA deployment onto client VDI inside the Vistra network is the remaining gate for five participants.</div></td>
+          <td><div class="tag">Infrastructure delays</div><div class="txt">Amber on infrastructure delays in delivering the Skan VA 5.x package, which has drawn a customer escalation. Installation of v5.7 is in progress with completion around 5 Sep, and v5.x customer training is pencilled for 15 Sep pending confirmation. The second process moves to a Thrivent-led, Skan-assisted model after professional-services support was extended to month end; Octavio is satisfied with that shape.</div></td>
+          <td><div class="tgt y">15 Sep</div></td>
+        </tr>
+        <tr>
+          <td><div class="acct">Reflect Health (LMP Portfolio Cos)</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">🟢 → 🟡</div></td>
+          <td><div class="pm">PM: Richa Koul</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Kishan Mahipal · SC: Mohammed Adil Baig · TAM: Sachin Gupta · PL: Sumit Punjabi</div></td>
+          <td><div class="own-list"><span class="own-n">Reflect Health IT</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Mohammed Adil Baig</span><span class="own-r">SC</span><span class="own-sep">·</span> <span class="own-n">Richa Koul</span><span class="own-r">PM</span></div></td>
+          <td><span class="badge yellow">Yellow</span></td>
+          <td><div class="tag">Delay from Business</div><div class="txt">VDI access for Skan to configure is held up in Reflect Health's internal approval and VDI training process, and delay there pushes configuration, data collection and value generation. Gateway setup for the V4 environment completed 19 Aug and value discovery plus walkthroughs are done for Stop Loss, Audit and Appeal, with Audit recommended as the first candidate. A business session is requested to finalise process selection and success criteria.</div></td>
           <td><div class="tgt ok">TBC</div></td>
         </tr>
         <tr>
-          <td><div class="acct">UHG - Optum</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">🟢 → 🟡</div></td>
+          <td><div class="acct">UHG - Optum</div><div style="font-size:9px;color:var(--yellow);font-weight:700;margin-top:2px">2w 🟡</div></td>
           <td><div class="pm">PM: Shantanu Kushwaha</div><div style="font-size:10px;color:var(--teal);margin-top:1px">CVM: Anshuman Johri · SC: Vinamre · TAM: Eric Edwards · PL: Sumit Punjabi, Anshuman Johri</div></td>
-          <td><div class="own-list"><span class="own-n">Skan Infra</span><span class="own-r">ENG</span><span class="own-sep">·</span> <span class="own-n">UHG IT</span><span class="own-r">CUST</span><span class="own-sep">·</span> <span class="own-n">Shantanu Kushwaha</span><span class="own-r">PM</span><span class="own-sep">·</span> <span class="own-n">Anshuman Johri</span><span class="own-r">CVM</span></div></td>
+          <td><div class="own-none">⚠ No Go-to-Green plan on file — no owners assigned. Anjana Damodara (5.X track) and Sumit Punjabi (PL) to enter a plan.</div></td>
           <td><span class="badge yellow">Yellow</span></td>
-          <td><div class="tag">Infrastructure delays</div><div class="txt">The 5.X implementation start has been missed against a target of the first to second week of September, and the delay is named as a risk to the UHG account renewal. Customer sentiment itself is still reported as Green.</div></td>
+          <td><div class="tag">Infrastructure delays</div><div class="tag">Impl. Challenges</div><div class="txt">FQDN details from UHG are still outstanding and are the single gate on 5.X infrastructure setup — 3–4 working days once received, then a further 1–2 days for Skan to hand the 5.X VA over for App Store packaging, which itself carries lead time. Gaurav Jain's team has already reverted the first intended 5.X process to 4.X because of the delay. Parent-level UHG delivery is reported Green with all latency issues resolved.</div></td>
           <td><div class="tgt y">Early Sep</div></td>
         </tr>
       </tbody>
     </table>
 
-    <div class="sh green">🟢 Green — 13 Accounts</div>
-    <div class="chips"><span class="chip">Ageas Portugal</span><span class="chip">Allianz Commercial</span><span class="chip">Allianz Germany</span><span class="chip">Capita</span><span class="chip">Cardinal Health</span><span class="chip">Humana</span><span class="chip">KKR</span><span class="chip">NextEra Energy</span><span class="chip">Principal</span><span class="chip">Reflect Health (LMP Portfolio Cos)</span><span class="chip">Thrivent Financials</span><span class="chip">US Bank</span><span class="chip">WR Berkeley</span></div>
+    <div class="sh green">🟢 Green — 12 Accounts</div>
+    <div class="chips"><span class="chip">Ageas Portugal</span><span class="chip">Allianz Commercial</span><span class="chip">Allianz Germany</span><span class="chip">Capita</span><span class="chip">Cardinal Health</span><span class="chip">Humana</span><span class="chip">KKR</span><span class="chip">Madison Square Garden</span><span class="chip">NextEra Energy</span><span class="chip">US Bank</span><span class="chip">Vistra</span><span class="chip">WR Berkeley</span></div>
     <div class="note-box" style="margin-top:8px">
-      <strong>Exceptions worth noting:</strong> Humana and Reflect Health both improved 🟡 → 🟢 · NextEra Energy and WR Berkeley filed for the first time after missed weeks · US Bank enters the base Green · Allianz Germany is Green with all processes complete and its contract ended 30 Jun 2026, extension talks open · Principal is Green with an Implementation Challenges reason tag still attached.
+      <strong>Exceptions worth noting:</strong> Vistra improved 🟡 → 🟢 with the VDI deployment path agreed and remote-desktop usage confined to under 10% of active time · Madison Square Garden filed for the first time after two missed weeks, with governance adopted 26 Aug and a weekly PMO now running · Allianz Germany is Green on completion rather than activity — all processes closed and the contract ended 30 Jun 2026, extension talks open · Humana is Green with the Citrix change request for roughly 150 RxE users still stalled on Humana's side · Allianz Commercial and Cardinal Health are Green with placeholder or empty Go Green Plans.
     </div>
 
     <div class="note-box" style="margin-top:12px">
@@ -598,12 +604,36 @@ table.gg.sky-h thead th{background:var(--sky-soft);color:var(--sky)}
       <strong>ℹ Excluded as inactive (Current State = Production In Progress but native status = complete · 1 account):</strong> LexisNexis – Risk/Analytics (legacy tracking task) — the live account is tracked as Lexis Nexis and is counted in the base above.
     </div>
 
+    <div class="panel" style="margin-top:14px">
+      <div class="ph navy"><span>📈 Week-over-Week Movements</span><span class="cnt">VS WEEK ENDING 21 AUG</span></div>
+      <table>
+        <thead><tr><th style="width:110px">Movement</th><th style="width:44px">#</th><th>Accounts</th></tr></thead>
+        <tbody>
+          <tr class="sec-row"><td colspan="3">Improved — 6</td></tr>
+          <tr><td><span class="wm ok">🔴 → 🟡</span></td><td><span class="wm ok">4</span></td><td><div class="txt">Sun Life Financial · Lincoln Financials · Brillio · American Express</div></td></tr>
+          <tr><td><span class="wm ok">🟡 → 🟢</span></td><td><span class="wm ok">1</span></td><td><div class="txt">Vistra</div></td></tr>
+          <tr><td><span class="wm ok">⬜ → 🟢</span></td><td><span class="wm ok">1</span></td><td><div class="txt">Madison Square Garden</div></td></tr>
+          <tr class="sec-row"><td colspan="3">Worsened — 5</td></tr>
+          <tr><td><span class="wm r">🟡 → 🔴</span></td><td><span class="wm r">2</span></td><td><div class="txt">Wipro · Unum</div></td></tr>
+          <tr><td><span class="wm y">🟢 → 🟡</span></td><td><span class="wm y">2</span></td><td><div class="txt">Reflect Health (LMP Portfolio Cos) · Thrivent Financials</div></td></tr>
+          <tr><td><span class="wm y">🟢 → ⬜</span></td><td><span class="wm y">1</span></td><td><div class="txt">Principal</div></td></tr>
+          <tr class="sec-row"><td colspan="3">Unchanged — 24</td></tr>
+          <tr><td><span class="wm r">🔴 → 🔴</span></td><td><span class="wm r">4</span></td><td><div class="txt">Equitable · Dell Technologies · Wells Fargo · The Hartford</div></td></tr>
+          <tr><td><span class="wm y">🟡 → 🟡</span></td><td><span class="wm y">6</span></td><td><div class="txt">MetLife · Infoniqa · Pathstone · Securian Financial · Avalara · UHG - Optum</div></td></tr>
+          <tr><td><span class="wm ok">🟢 → 🟢</span></td><td><span class="wm ok">10</span></td><td><div class="txt">Ageas Portugal · Allianz Commercial · Allianz Germany · Capita · Cardinal Health · Humana · KKR · NextEra Energy · US Bank · WR Berkeley</div></td></tr>
+          <tr><td><span class="wm ok">⬜ → ⬜</span></td><td><span class="wm ok">4</span></td><td><div class="txt">Bank of America · BlackBox · Lexis Nexis · Scan Health</div></td></tr>
+          <tr class="sec-row"><td colspan="3">Base changes</td></tr>
+          <tr><td><span class="wm ok">New / Exit</span></td><td><span class="wm ok">0</span></td><td><div class="txt">No accounts entered or left the Production In Progress base this week.</div></td></tr>
+        </tbody>
+      </table>
+    </div>
+
 
   <div class="botrow">
         <div class="panel">
-      <div class="ph navy"><span>90-Day Sentiment Trend</span><span class="cnt">24 WEEKS</span></div>
+      <div class="ph navy"><span>90-Day Sentiment Trend</span><span class="cnt">25 WEEKS</span></div>
       <div class="chart-box">
-<svg viewBox="0 0 470 215" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',Inter,system-ui,sans-serif" role="img" aria-label="90-day sentiment trend, 24 weeks">
+<svg viewBox="0 0 470 215" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',Inter,system-ui,sans-serif" role="img" aria-label="Sentiment trend, 25 weeks">
 <rect x="124" y="7" width="10" height="7" rx="1.5" fill="#be123c"/>
 <text x="138" y="14" font-size="9" fill="#374151">Red</text>
 <rect x="182" y="7" width="10" height="7" rx="1.5" fill="#d97706"/>
@@ -628,143 +658,181 @@ table.gg.sky-h thead th{background:var(--sky-soft);color:var(--sky)}
 <text x="23" y="42.9" font-size="8" fill="#64748b" text-anchor="end">21</text>
 <line x1="28.0" y1="34" x2="28.0" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
 <text x="28.0" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 28.0 172.0)">13 Mar</text>
-<line x1="46.9" y1="34" x2="46.9" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="46.9" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 46.9 172.0)">20 Mar</text>
-<line x1="65.7" y1="34" x2="65.7" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="65.7" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 65.7 172.0)">27 Mar</text>
-<line x1="84.6" y1="34" x2="84.6" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="84.6" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 84.6 172.0)">3 Apr</text>
-<line x1="103.5" y1="34" x2="103.5" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="103.5" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 103.5 172.0)">10 Apr</text>
-<line x1="122.3" y1="34" x2="122.3" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="122.3" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 122.3 172.0)">17 Apr</text>
-<line x1="141.2" y1="34" x2="141.2" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="141.2" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 141.2 172.0)">24 Apr</text>
-<line x1="160.1" y1="34" x2="160.1" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="160.1" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 160.1 172.0)">1 May</text>
-<line x1="179.0" y1="34" x2="179.0" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="179.0" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 179.0 172.0)">8 May</text>
-<line x1="197.8" y1="34" x2="197.8" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="197.8" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 197.8 172.0)">15 May</text>
-<line x1="216.7" y1="34" x2="216.7" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="216.7" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 216.7 172.0)">22 May</text>
-<line x1="235.6" y1="34" x2="235.6" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="235.6" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 235.6 172.0)">29 May</text>
-<line x1="254.4" y1="34" x2="254.4" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="254.4" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 254.4 172.0)">5 Jun</text>
-<line x1="273.3" y1="34" x2="273.3" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="273.3" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 273.3 172.0)">13 Jun</text>
-<line x1="292.2" y1="34" x2="292.2" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="292.2" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 292.2 172.0)">20 Jun</text>
-<line x1="311.0" y1="34" x2="311.0" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="311.0" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 311.0 172.0)">27 Jun</text>
-<line x1="329.9" y1="34" x2="329.9" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="329.9" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 329.9 172.0)">3 Jul</text>
-<line x1="348.8" y1="34" x2="348.8" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="348.8" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 348.8 172.0)">10 Jul</text>
-<line x1="367.7" y1="34" x2="367.7" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="367.7" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 367.7 172.0)">17 Jul</text>
-<line x1="386.5" y1="34" x2="386.5" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="386.5" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 386.5 172.0)">24 Jul</text>
-<line x1="405.4" y1="34" x2="405.4" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="405.4" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 405.4 172.0)">31 Jul</text>
-<line x1="424.3" y1="34" x2="424.3" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="424.3" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 424.3 172.0)">7 Aug</text>
-<line x1="443.1" y1="34" x2="443.1" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="443.1" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 443.1 172.0)">14 Aug</text>
+<line x1="46.1" y1="34" x2="46.1" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="46.1" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 46.1 172.0)">20 Mar</text>
+<line x1="64.2" y1="34" x2="64.2" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="64.2" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 64.2 172.0)">27 Mar</text>
+<line x1="82.2" y1="34" x2="82.2" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="82.2" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 82.2 172.0)">3 Apr</text>
+<line x1="100.3" y1="34" x2="100.3" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="100.3" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 100.3 172.0)">10 Apr</text>
+<line x1="118.4" y1="34" x2="118.4" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="118.4" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 118.4 172.0)">17 Apr</text>
+<line x1="136.5" y1="34" x2="136.5" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="136.5" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 136.5 172.0)">24 Apr</text>
+<line x1="154.6" y1="34" x2="154.6" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="154.6" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 154.6 172.0)">1 May</text>
+<line x1="172.7" y1="34" x2="172.7" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="172.7" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 172.7 172.0)">8 May</text>
+<line x1="190.8" y1="34" x2="190.8" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="190.8" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 190.8 172.0)">15 May</text>
+<line x1="208.8" y1="34" x2="208.8" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="208.8" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 208.8 172.0)">22 May</text>
+<line x1="226.9" y1="34" x2="226.9" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="226.9" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 226.9 172.0)">29 May</text>
+<line x1="245.0" y1="34" x2="245.0" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="245.0" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 245.0 172.0)">5 Jun</text>
+<line x1="263.1" y1="34" x2="263.1" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="263.1" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 263.1 172.0)">13 Jun</text>
+<line x1="281.2" y1="34" x2="281.2" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="281.2" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 281.2 172.0)">20 Jun</text>
+<line x1="299.2" y1="34" x2="299.2" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="299.2" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 299.2 172.0)">27 Jun</text>
+<line x1="317.3" y1="34" x2="317.3" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="317.3" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 317.3 172.0)">3 Jul</text>
+<line x1="335.4" y1="34" x2="335.4" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="335.4" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 335.4 172.0)">10 Jul</text>
+<line x1="353.5" y1="34" x2="353.5" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="353.5" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 353.5 172.0)">17 Jul</text>
+<line x1="371.6" y1="34" x2="371.6" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="371.6" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 371.6 172.0)">24 Jul</text>
+<line x1="389.7" y1="34" x2="389.7" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="389.7" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 389.7 172.0)">31 Jul</text>
+<line x1="407.8" y1="34" x2="407.8" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="407.8" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 407.8 172.0)">7 Aug</text>
+<line x1="425.8" y1="34" x2="425.8" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="425.8" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 425.8 172.0)">14 Aug</text>
+<line x1="443.9" y1="34" x2="443.9" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="443.9" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 443.9 172.0)">21 Aug</text>
 <line x1="462.0" y1="34" x2="462.0" y2="164" stroke="#e5e7eb" stroke-width="0.6"/>
-<text x="462.0" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 462.0 172.0)">21 Aug</text>
+<text x="462.0" y="172.0" font-size="8" fill="#64748b" text-anchor="end" transform="rotate(-40 462.0 172.0)">28 Aug</text>
 <line x1="28" y1="164" x2="462" y2="164" stroke="#cbd5e1" stroke-width="1"/>
-<path d="M28.0,134.5 C30.2,135.8 42.5,147.7 46.9,146.3 C51.3,144.9 61.3,122.6 65.7,122.6 C70.1,122.6 80.2,143.5 84.6,146.3 C89.0,149.0 99.1,147.0 103.5,146.3 C107.9,145.6 117.9,141.1 122.3,140.4 C126.8,139.7 136.8,139.0 141.2,140.4 C145.6,141.7 155.7,152.2 160.1,152.2 C164.5,152.2 174.6,143.8 179.0,140.4 C183.4,136.9 193.4,124.0 197.8,122.6 C202.2,121.3 212.3,127.2 216.7,128.5 C221.1,129.9 231.2,132.4 235.6,134.5 C240.0,136.5 250.0,143.5 254.4,146.3 C258.8,149.0 268.9,157.4 273.3,158.1 C277.7,158.8 287.8,153.6 292.2,152.2 C296.6,150.8 306.6,147.0 311.0,146.3 C315.4,145.6 325.5,146.3 329.9,146.3 C334.3,146.3 344.4,147.7 348.8,146.3 C353.2,144.9 363.2,137.2 367.7,134.5 C372.1,131.7 382.1,123.3 386.5,122.6 C390.9,121.9 401.0,127.2 405.4,128.5 C409.8,129.9 419.9,134.5 424.3,134.5 C428.7,134.5 438.7,130.6 443.1,128.5 C447.5,126.5 459.8,118.1 462.0,116.7" fill="none" stroke="#be123c" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M28.0,134.5 C34.3,134.5 39.8,146.3 46.1,146.3 C52.4,146.3 57.8,122.6 64.2,122.6 C70.5,122.6 75.9,146.3 82.2,146.3 C88.6,146.3 94.0,146.3 100.3,146.3 C106.7,146.3 112.1,140.4 118.4,140.4 C124.7,140.4 130.2,140.4 136.5,140.4 C142.8,140.4 148.3,152.2 154.6,152.2 C160.9,152.2 166.3,140.4 172.7,140.4 C179.0,140.4 184.4,122.6 190.8,122.6 C197.1,122.6 202.5,128.5 208.8,128.5 C215.2,128.5 220.6,134.5 226.9,134.5 C233.2,134.5 238.7,146.3 245.0,146.3 C251.3,146.3 256.8,158.1 263.1,158.1 C269.4,158.1 274.8,152.2 281.2,152.2 C287.5,152.2 292.9,146.3 299.2,146.3 C305.6,146.3 311.0,146.3 317.3,146.3 C323.7,146.3 329.1,146.3 335.4,146.3 C341.7,146.3 347.2,134.5 353.5,134.5 C359.8,134.5 365.3,122.6 371.6,122.6 C377.9,122.6 383.3,128.5 389.7,128.5 C396.0,128.5 401.4,134.5 407.8,134.5 C414.1,134.5 419.5,128.5 425.8,128.5 C432.2,128.5 437.6,116.7 443.9,116.7 C450.2,116.7 455.7,128.5 462.0,128.5" fill="none" stroke="#be123c" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="28.0" cy="134.5" r="2.4" fill="#be123c"><title>5</title></circle>
-<circle cx="46.9" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
-<circle cx="65.7" cy="122.6" r="2.4" fill="#be123c"><title>7</title></circle>
-<circle cx="84.6" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
-<circle cx="103.5" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
-<circle cx="122.3" cy="140.4" r="2.4" fill="#be123c"><title>4</title></circle>
-<circle cx="141.2" cy="140.4" r="2.4" fill="#be123c"><title>4</title></circle>
-<circle cx="160.1" cy="152.2" r="2.4" fill="#be123c"><title>2</title></circle>
-<circle cx="179.0" cy="140.4" r="2.4" fill="#be123c"><title>4</title></circle>
-<circle cx="197.8" cy="122.6" r="2.4" fill="#be123c"><title>7</title></circle>
-<circle cx="216.7" cy="128.5" r="2.4" fill="#be123c"><title>6</title></circle>
-<circle cx="235.6" cy="134.5" r="2.4" fill="#be123c"><title>5</title></circle>
-<circle cx="254.4" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
-<circle cx="273.3" cy="158.1" r="2.4" fill="#be123c"><title>1</title></circle>
-<circle cx="292.2" cy="152.2" r="2.4" fill="#be123c"><title>2</title></circle>
-<circle cx="311.0" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
-<circle cx="329.9" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
-<circle cx="348.8" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
-<circle cx="367.7" cy="134.5" r="2.4" fill="#be123c"><title>5</title></circle>
-<circle cx="386.5" cy="122.6" r="2.4" fill="#be123c"><title>7</title></circle>
-<circle cx="405.4" cy="128.5" r="2.4" fill="#be123c"><title>6</title></circle>
-<circle cx="424.3" cy="134.5" r="2.4" fill="#be123c"><title>5</title></circle>
-<circle cx="443.1" cy="128.5" r="2.4" fill="#be123c"><title>6</title></circle>
-<circle cx="462.0" cy="116.7" r="2.4" fill="#be123c"><title>8</title></circle>
-<path d="M28.0,128.5 C30.2,129.9 42.5,139.0 46.9,140.4 C51.3,141.7 61.3,141.7 65.7,140.4 C70.1,139.0 80.2,127.9 84.6,128.5 C89.0,129.2 99.1,145.6 103.5,146.3 C107.9,147.0 117.9,140.0 122.3,134.5 C126.8,128.9 136.8,99.7 141.2,99.0 C145.6,98.3 155.7,123.0 160.1,128.5 C164.5,134.1 174.6,147.0 179.0,146.3 C183.4,145.6 193.4,121.9 197.8,122.6 C202.2,123.3 212.3,151.5 216.7,152.2 C221.1,152.9 231.2,132.7 235.6,128.5 C240.0,124.4 250.0,120.2 254.4,116.7 C258.8,113.3 268.9,95.6 273.3,99.0 C277.7,102.4 287.8,142.8 292.2,146.3 C296.6,149.7 306.6,130.6 311.0,128.5 C315.4,126.5 325.5,127.2 329.9,128.5 C334.3,129.9 344.4,138.3 348.8,140.4 C353.2,142.4 363.2,147.0 367.7,146.3 C372.1,145.6 382.1,134.5 386.5,134.5 C390.9,134.5 401.0,148.3 405.4,146.3 C409.8,144.2 419.9,122.2 424.3,116.7 C428.7,111.2 438.7,99.7 443.1,99.0 C447.5,98.3 459.8,109.4 462.0,110.8" fill="none" stroke="#d97706" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="46.1" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
+<circle cx="64.2" cy="122.6" r="2.4" fill="#be123c"><title>7</title></circle>
+<circle cx="82.2" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
+<circle cx="100.3" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
+<circle cx="118.4" cy="140.4" r="2.4" fill="#be123c"><title>4</title></circle>
+<circle cx="136.5" cy="140.4" r="2.4" fill="#be123c"><title>4</title></circle>
+<circle cx="154.6" cy="152.2" r="2.4" fill="#be123c"><title>2</title></circle>
+<circle cx="172.7" cy="140.4" r="2.4" fill="#be123c"><title>4</title></circle>
+<circle cx="190.8" cy="122.6" r="2.4" fill="#be123c"><title>7</title></circle>
+<circle cx="208.8" cy="128.5" r="2.4" fill="#be123c"><title>6</title></circle>
+<circle cx="226.9" cy="134.5" r="2.4" fill="#be123c"><title>5</title></circle>
+<circle cx="245.0" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
+<circle cx="263.1" cy="158.1" r="2.4" fill="#be123c"><title>1</title></circle>
+<circle cx="281.2" cy="152.2" r="2.4" fill="#be123c"><title>2</title></circle>
+<circle cx="299.2" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
+<circle cx="317.3" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
+<circle cx="335.4" cy="146.3" r="2.4" fill="#be123c"><title>3</title></circle>
+<circle cx="353.5" cy="134.5" r="2.4" fill="#be123c"><title>5</title></circle>
+<circle cx="371.6" cy="122.6" r="2.4" fill="#be123c"><title>7</title></circle>
+<circle cx="389.7" cy="128.5" r="2.4" fill="#be123c"><title>6</title></circle>
+<circle cx="407.8" cy="134.5" r="2.4" fill="#be123c"><title>5</title></circle>
+<circle cx="425.8" cy="128.5" r="2.4" fill="#be123c"><title>6</title></circle>
+<circle cx="443.9" cy="116.7" r="2.4" fill="#be123c"><title>8</title></circle>
+<circle cx="462.0" cy="128.5" r="2.4" fill="#be123c"><title>6</title></circle>
+<path d="M28.0,128.5 C34.3,128.5 39.8,140.4 46.1,140.4 C52.4,140.4 57.8,140.4 64.2,140.4 C70.5,140.4 75.9,128.5 82.2,128.5 C88.6,128.5 94.0,146.3 100.3,146.3 C106.7,146.3 112.1,134.5 118.4,134.5 C124.7,134.5 130.2,99.0 136.5,99.0 C142.8,99.0 148.3,128.5 154.6,128.5 C160.9,128.5 166.3,146.3 172.7,146.3 C179.0,146.3 184.4,122.6 190.8,122.6 C197.1,122.6 202.5,152.2 208.8,152.2 C215.2,152.2 220.6,128.5 226.9,128.5 C233.2,128.5 238.7,116.7 245.0,116.7 C251.3,116.7 256.8,99.0 263.1,99.0 C269.4,99.0 274.8,146.3 281.2,146.3 C287.5,146.3 292.9,128.5 299.2,128.5 C305.6,128.5 311.0,128.5 317.3,128.5 C323.7,128.5 329.1,140.4 335.4,140.4 C341.7,140.4 347.2,146.3 353.5,146.3 C359.8,146.3 365.3,134.5 371.6,134.5 C377.9,134.5 383.3,146.3 389.7,146.3 C396.0,146.3 401.4,116.7 407.8,116.7 C414.1,116.7 419.5,99.0 425.8,99.0 C432.2,99.0 437.6,110.8 443.9,110.8 C450.2,110.8 455.7,93.1 462.0,93.1" fill="none" stroke="#d97706" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="28.0" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
-<circle cx="46.9" cy="140.4" r="2.4" fill="#d97706"><title>4</title></circle>
-<circle cx="65.7" cy="140.4" r="2.4" fill="#d97706"><title>4</title></circle>
-<circle cx="84.6" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
-<circle cx="103.5" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
-<circle cx="122.3" cy="134.5" r="2.4" fill="#d97706"><title>5</title></circle>
-<circle cx="141.2" cy="99.0" r="2.4" fill="#d97706"><title>11</title></circle>
-<circle cx="160.1" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
-<circle cx="179.0" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
-<circle cx="197.8" cy="122.6" r="2.4" fill="#d97706"><title>7</title></circle>
-<circle cx="216.7" cy="152.2" r="2.4" fill="#d97706"><title>2</title></circle>
-<circle cx="235.6" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
-<circle cx="254.4" cy="116.7" r="2.4" fill="#d97706"><title>8</title></circle>
-<circle cx="273.3" cy="99.0" r="2.4" fill="#d97706"><title>11</title></circle>
-<circle cx="292.2" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
-<circle cx="311.0" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
-<circle cx="329.9" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
-<circle cx="348.8" cy="140.4" r="2.4" fill="#d97706"><title>4</title></circle>
-<circle cx="367.7" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
-<circle cx="386.5" cy="134.5" r="2.4" fill="#d97706"><title>5</title></circle>
-<circle cx="405.4" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
-<circle cx="424.3" cy="116.7" r="2.4" fill="#d97706"><title>8</title></circle>
-<circle cx="443.1" cy="99.0" r="2.4" fill="#d97706"><title>11</title></circle>
-<circle cx="462.0" cy="110.8" r="2.4" fill="#d97706"><title>9</title></circle>
-<path d="M28.0,99.0 C30.2,98.3 42.5,95.8 46.9,93.1 C51.3,90.3 61.3,76.1 65.7,75.4 C70.1,74.7 80.2,83.7 84.6,87.2 C89.0,90.6 99.1,104.2 103.5,104.9 C107.9,105.6 117.9,92.4 122.3,93.1 C126.8,93.8 136.8,110.8 141.2,110.8 C145.6,110.8 155.7,91.7 160.1,93.1 C164.5,94.5 174.6,119.9 179.0,122.6 C183.4,125.4 193.4,114.7 197.8,116.7 C202.2,118.8 212.3,139.0 216.7,140.4 C221.1,141.7 231.2,130.6 235.6,128.5 C240.0,126.5 250.0,123.3 254.4,122.6 C258.8,121.9 268.9,123.3 273.3,122.6 C277.7,121.9 287.8,122.9 292.2,116.7 C296.6,110.5 306.6,76.3 311.0,69.5 C315.4,62.6 325.5,56.9 329.9,57.6 C334.3,58.3 344.4,74.7 348.8,75.4 C353.2,76.1 363.2,64.2 367.7,63.5 C372.1,62.9 382.1,68.1 386.5,69.5 C390.9,70.8 401.0,73.3 405.4,75.4 C409.8,77.4 419.9,85.8 424.3,87.2 C428.7,88.6 438.7,87.2 443.1,87.2 C447.5,87.2 459.8,87.2 462.0,87.2" fill="none" stroke="#059669" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="46.1" cy="140.4" r="2.4" fill="#d97706"><title>4</title></circle>
+<circle cx="64.2" cy="140.4" r="2.4" fill="#d97706"><title>4</title></circle>
+<circle cx="82.2" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
+<circle cx="100.3" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
+<circle cx="118.4" cy="134.5" r="2.4" fill="#d97706"><title>5</title></circle>
+<circle cx="136.5" cy="99.0" r="2.4" fill="#d97706"><title>11</title></circle>
+<circle cx="154.6" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
+<circle cx="172.7" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
+<circle cx="190.8" cy="122.6" r="2.4" fill="#d97706"><title>7</title></circle>
+<circle cx="208.8" cy="152.2" r="2.4" fill="#d97706"><title>2</title></circle>
+<circle cx="226.9" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
+<circle cx="245.0" cy="116.7" r="2.4" fill="#d97706"><title>8</title></circle>
+<circle cx="263.1" cy="99.0" r="2.4" fill="#d97706"><title>11</title></circle>
+<circle cx="281.2" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
+<circle cx="299.2" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
+<circle cx="317.3" cy="128.5" r="2.4" fill="#d97706"><title>6</title></circle>
+<circle cx="335.4" cy="140.4" r="2.4" fill="#d97706"><title>4</title></circle>
+<circle cx="353.5" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
+<circle cx="371.6" cy="134.5" r="2.4" fill="#d97706"><title>5</title></circle>
+<circle cx="389.7" cy="146.3" r="2.4" fill="#d97706"><title>3</title></circle>
+<circle cx="407.8" cy="116.7" r="2.4" fill="#d97706"><title>8</title></circle>
+<circle cx="425.8" cy="99.0" r="2.4" fill="#d97706"><title>11</title></circle>
+<circle cx="443.9" cy="110.8" r="2.4" fill="#d97706"><title>9</title></circle>
+<circle cx="462.0" cy="93.1" r="2.4" fill="#d97706"><title>12</title></circle>
+<path d="M28.0,99.0 C34.3,99.0 39.8,93.1 46.1,93.1 C52.4,93.1 57.8,75.4 64.2,75.4 C70.5,75.4 75.9,87.2 82.2,87.2 C88.6,87.2 94.0,104.9 100.3,104.9 C106.7,104.9 112.1,93.1 118.4,93.1 C124.7,93.1 130.2,110.8 136.5,110.8 C142.8,110.8 148.3,93.1 154.6,93.1 C160.9,93.1 166.3,122.6 172.7,122.6 C179.0,122.6 184.4,116.7 190.8,116.7 C197.1,116.7 202.5,140.4 208.8,140.4 C215.2,140.4 220.6,128.5 226.9,128.5 C233.2,128.5 238.7,122.6 245.0,122.6 C251.3,122.6 256.8,122.6 263.1,122.6 C269.4,122.6 274.8,116.7 281.2,116.7 C287.5,116.7 292.9,69.4 299.2,69.4 C305.6,69.4 311.0,57.6 317.3,57.6 C323.7,57.6 329.1,75.4 335.4,75.4 C341.7,75.4 347.2,63.5 353.5,63.5 C359.8,63.5 365.3,69.4 371.6,69.4 C377.9,69.4 383.3,75.4 389.7,75.4 C396.0,75.4 401.4,87.2 407.8,87.2 C414.1,87.2 419.5,87.2 425.8,87.2 C432.2,87.2 437.6,87.2 443.9,87.2 C450.2,87.2 455.7,93.1 462.0,93.1" fill="none" stroke="#059669" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="28.0" cy="99.0" r="2.4" fill="#059669"><title>11</title></circle>
-<circle cx="46.9" cy="93.1" r="2.4" fill="#059669"><title>12</title></circle>
-<circle cx="65.7" cy="75.4" r="2.4" fill="#059669"><title>15</title></circle>
-<circle cx="84.6" cy="87.2" r="2.4" fill="#059669"><title>13</title></circle>
-<circle cx="103.5" cy="104.9" r="2.4" fill="#059669"><title>10</title></circle>
-<circle cx="122.3" cy="93.1" r="2.4" fill="#059669"><title>12</title></circle>
-<circle cx="141.2" cy="110.8" r="2.4" fill="#059669"><title>9</title></circle>
-<circle cx="160.1" cy="93.1" r="2.4" fill="#059669"><title>12</title></circle>
-<circle cx="179.0" cy="122.6" r="2.4" fill="#059669"><title>7</title></circle>
-<circle cx="197.8" cy="116.7" r="2.4" fill="#059669"><title>8</title></circle>
-<circle cx="216.7" cy="140.4" r="2.4" fill="#059669"><title>4</title></circle>
-<circle cx="235.6" cy="128.5" r="2.4" fill="#059669"><title>6</title></circle>
-<circle cx="254.4" cy="122.6" r="2.4" fill="#059669"><title>7</title></circle>
-<circle cx="273.3" cy="122.6" r="2.4" fill="#059669"><title>7</title></circle>
-<circle cx="292.2" cy="116.7" r="2.4" fill="#059669"><title>8</title></circle>
-<circle cx="311.0" cy="69.5" r="2.4" fill="#059669"><title>16</title></circle>
-<circle cx="329.9" cy="57.6" r="2.4" fill="#059669"><title>18</title></circle>
-<circle cx="348.8" cy="75.4" r="2.4" fill="#059669"><title>15</title></circle>
-<circle cx="367.7" cy="63.5" r="2.4" fill="#059669"><title>17</title></circle>
-<circle cx="386.5" cy="69.5" r="2.4" fill="#059669"><title>16</title></circle>
-<circle cx="405.4" cy="75.4" r="2.4" fill="#059669"><title>15</title></circle>
-<circle cx="424.3" cy="87.2" r="2.4" fill="#059669"><title>13</title></circle>
-<circle cx="443.1" cy="87.2" r="2.4" fill="#059669"><title>13</title></circle>
-<circle cx="462.0" cy="87.2" r="2.4" fill="#059669"><title>13</title></circle>
-</svg>
-      </div>
+<circle cx="46.1" cy="93.1" r="2.4" fill="#059669"><title>12</title></circle>
+<circle cx="64.2" cy="75.4" r="2.4" fill="#059669"><title>15</title></circle>
+<circle cx="82.2" cy="87.2" r="2.4" fill="#059669"><title>13</title></circle>
+<circle cx="100.3" cy="104.9" r="2.4" fill="#059669"><title>10</title></circle>
+<circle cx="118.4" cy="93.1" r="2.4" fill="#059669"><title>12</title></circle>
+<circle cx="136.5" cy="110.8" r="2.4" fill="#059669"><title>9</title></circle>
+<circle cx="154.6" cy="93.1" r="2.4" fill="#059669"><title>12</title></circle>
+<circle cx="172.7" cy="122.6" r="2.4" fill="#059669"><title>7</title></circle>
+<circle cx="190.8" cy="116.7" r="2.4" fill="#059669"><title>8</title></circle>
+<circle cx="208.8" cy="140.4" r="2.4" fill="#059669"><title>4</title></circle>
+<circle cx="226.9" cy="128.5" r="2.4" fill="#059669"><title>6</title></circle>
+<circle cx="245.0" cy="122.6" r="2.4" fill="#059669"><title>7</title></circle>
+<circle cx="263.1" cy="122.6" r="2.4" fill="#059669"><title>7</title></circle>
+<circle cx="281.2" cy="116.7" r="2.4" fill="#059669"><title>8</title></circle>
+<circle cx="299.2" cy="69.4" r="2.4" fill="#059669"><title>16</title></circle>
+<circle cx="317.3" cy="57.6" r="2.4" fill="#059669"><title>18</title></circle>
+<circle cx="335.4" cy="75.4" r="2.4" fill="#059669"><title>15</title></circle>
+<circle cx="353.5" cy="63.5" r="2.4" fill="#059669"><title>17</title></circle>
+<circle cx="371.6" cy="69.4" r="2.4" fill="#059669"><title>16</title></circle>
+<circle cx="389.7" cy="75.4" r="2.4" fill="#059669"><title>15</title></circle>
+<circle cx="407.8" cy="87.2" r="2.4" fill="#059669"><title>13</title></circle>
+<circle cx="425.8" cy="87.2" r="2.4" fill="#059669"><title>13</title></circle>
+<circle cx="443.9" cy="87.2" r="2.4" fill="#059669"><title>13</title></circle>
+<circle cx="462.0" cy="93.1" r="2.4" fill="#059669"><title>12</title></circle>
+</svg>      </div>
     </div>
 
     <!-- Missed -->
     <div class="panel">
-      <div class="ph amber"><span>⬜ Missed — 5 Accounts</span><span class="cnt">NO UPDATE THIS WEEK</span></div>
-      <div style="padding:10px 12px;display:flex;flex-wrap:wrap;gap:5px">
-        <span style="background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:2px 8px;font-size:11px;font-weight:600;color:var(--muted)">Bank of America · 1w · 🟢 → ⬜</span>
-        <span style="background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:2px 8px;font-size:11px;font-weight:600;color:var(--muted)">BlackBox · 1w · 🟡 → ⬜</span>
-        <span style="background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:2px 8px;font-size:11px;font-weight:600;color:var(--muted)">Lexis Nexis · 1w · 🟢 → ⬜</span>
-        <span style="background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:2px 8px;font-size:11px;font-weight:600;color:var(--muted)">Madison Square Garden · 1w · NEW</span>
-        <span style="background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:2px 8px;font-size:11px;font-weight:600;color:var(--muted)">Scan Health · 1w · NEW</span>
-      </div>
-      <div style="padding:5px 12px 8px;font-size:11px;color:var(--amber)">⚠ Missed more than doubled, from two accounts to five, and this cycle it is established accounts rather than new entrants. Bank of America, Lexis Nexis and BlackBox all reported last week and have gone silent; Bank of America, Madison Square Garden and Scan Health have review tasks that were opened on 18 Aug and left with Weekly Sentiment blank. The Hartford, BlackBox and Scan Health all carry no assigned PM.</div>
+      <div class="ph amber"><span>⬜ Missed — 5 Accounts</span><span class="cnt">1 PM-ORG MISS · 4 EXPLAINED</span></div>
+      <table>
+        <thead>
+          <tr>
+            <th style="background:#fef3c7;color:#92400e;border-bottom:1px solid #fde68a">Account</th>
+            <th style="background:#fef3c7;color:#92400e;border-bottom:1px solid #fde68a">Accountable</th>
+            <th style="background:#fef3c7;color:#92400e;border-bottom:1px solid #fde68a">Owner</th>
+            <th style="background:#fef3c7;color:#92400e;border-bottom:1px solid #fde68a">Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="acct">Principal</div><div style="font-size:9px;color:var(--muted);font-weight:700;margin-top:2px">1w · 🟢 → ⬜</div></td>
+            <td><span class="badge red">PM org</span></td>
+            <td><div class="txt">Ritu Rawat</div></td>
+            <td><div class="txt">Update missed. Readout is complete and the account is awaiting client confirmation on next steps, but no sentiment was filed.</div></td>
+          </tr>
+          <tr>
+            <td><div class="acct">Bank of America</div><div style="font-size:9px;color:var(--muted);font-weight:700;margin-top:2px">2w · ⬜ → ⬜</div></td>
+            <td><span class="badge sky">CVM org</span></td>
+            <td><div class="txt">Nandhagopal Muralithar</div></td>
+            <td><div class="txt">No PM allocated. A recurring-task fault has been corrected; the weekly summary was written but the Weekly Sentiment field was left blank.</div></td>
+          </tr>
+          <tr>
+            <td><div class="acct">BlackBox</div><div style="font-size:9px;color:var(--muted);font-weight:700;margin-top:2px">2w · ⬜ → ⬜</div></td>
+            <td><span class="badge sky">CVM org</span></td>
+            <td><div class="txt">Eric Dubrow</div></td>
+            <td><div class="txt">No PM allocated by design — the customer has not purchased professional services, so this is a CVM-led account.</div></td>
+          </tr>
+          <tr>
+            <td><div class="acct">Lexis Nexis</div><div style="font-size:9px;color:var(--muted);font-weight:700;margin-top:2px">2w · ⬜ → ⬜</div></td>
+            <td><span class="badge sky">CVM org</span></td>
+            <td><div class="txt">Nikhil Jain</div></td>
+            <td><div class="txt">CVM-led account with no PM allocated.</div></td>
+          </tr>
+          <tr>
+            <td><div class="acct">Scan Health</div><div style="font-size:9px;color:var(--muted);font-weight:700;margin-top:2px">2w · ⬜ → ⬜</div></td>
+            <td><span class="badge green">Not started</span></td>
+            <td><div class="txt">Saadia Ali</div></td>
+            <td><div class="txt">Implementation has not kicked off. Awaiting the sales handover and the customer kickoff call — there is nothing to report yet.</div></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
 
@@ -797,7 +865,7 @@ table.gg.sky-h thead th{background:var(--sky-soft);color:var(--sky)}
 </div>
 
 <div class="footer">
-  <span>Skan AI · CS Ops · Week ending 21st Aug 2026 · Sent Monday 24th Aug IST</span>
+  <span>Skan AI · CS Ops · Week ending 28th Aug 2026 · Sent Monday 31st Aug IST</span>
   <span>35 Production In Progress · 7 Fully Enabled excluded</span>
 </div>
 <div class="datameta">
